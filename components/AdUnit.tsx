@@ -48,7 +48,7 @@ export default function AdUnit({
     }
   }, [isEligible, isDevelopment, pathname]);
 
-  if (!isEnabled && !isDevelopment) {
+  if (!isEnabled) {
     return null; // Safely disabled if not configured
   }
 
