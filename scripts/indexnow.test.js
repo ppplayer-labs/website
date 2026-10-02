@@ -135,3 +135,14 @@ test('invalid CLI arguments return a failing process exit code', () => {
   assert.equal(result.status, 1);
   assert.match(result.stderr.toString(), /Usage:/);
 });
+
+
+test('provider-specific pending verification stays a failure with actionable guidance', async () => {
+  const fixture = server();
+  const fetchImpl = async (url, options) => {
+    const result = await fixture.fetchImpl(url, options);
+    return options.method === 'POST' ? response(JSON.stringify({errorCode: 'SiteVerificationNotCompleted'}), 403) : result;
+  };
+  await assert.rejects(run({...fixture, fetchImpl}), /verification is still pending.*Retry the workflow/);
+  assert.equal(fixture.calls.filter(call => call.options.method === 'POST').length, 1);
+});

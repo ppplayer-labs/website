@@ -66,9 +66,9 @@ export const metadata: Metadata = {
     shortcut: '/logo.png?v=2',
     apple: '/logo.png?v=2',
   },
-  other: {
-    'google-adsense-account': 'ca-pub-3432071939645868',
-  },
+  // other: {
+  //   'google-adsense-account': 'ca-pub-3432071939645868',
+  // },
 }
 
 import {NextIntlClientProvider} from 'next-intl';

@@ -36,3 +36,23 @@ New guides need frontmatter (`title`, `excerpt`, `date`, `author`, `category`, `
 ## Deployment
 
 `npm run build` creates the standalone output configured in `next.config.ts`. The Dockerfile packages it together with public assets and Markdown content. A local content update does not deploy or publish the website; follow the project's release/deployment process separately.
+
+## IndexNow
+
+The automatic workflow lives in this repository at `.github/workflows/indexnow.yml`, because Coolify deploys `ppplayer-labs/website` directly. It runs for relevant pushes to `main` and can be started manually from the Actions tab. The former parent-repository workflow is removed to avoid misplaced or duplicate notifications.
+
+`npm run build` first generates `public/indexnow-revision.txt` from website source, translations, content and public assets. The generated file is ignored by Git and included by the Dockerfile's existing public-folder copy. The workflow checks the corresponding live marker every 15 seconds, for up to ten minutes, before reading the production key and sitemap. An older deployment, failed deployment or missing marker fails the job without submitting URLs. No Coolify secret or fixed deployment delay is required. Coolify must build through `npm run build`, as the checked-in Dockerfile already does.
+
+```bash
+npm run test:indexnow
+npm run indexnow -- --dry-run
+npm run indexnow -- --wait-for-deployment
+```
+
+The dry run only reads the live verification file and sitemap; it sends no notification and does not certify deployment readiness. The submission command verifies the deployed source, validates and deduplicates page URLs, and sends batches of at most 10,000 URLs. Failures return a nonzero exit code. HTTP 202 means key validation is pending; neither 200 nor 202 guarantees indexing. Rejected requests are not automatically retried, including HTTP 429. The provider may return HTTP 403 with `SiteVerificationNotCompleted` before its first site verification finishes, even when our public-key check passes. This remains a failing job with clear guidance to rerun after provider verification; it is not treated as an accepted notification.
+
+Commit and push the website changes to activate the workflow and deploy its first marker. Commit the parent workflow removal in the parent repository too. Until the first marker-enabled build is live, the new workflow deliberately waits rather than submitting an older deployment. Do not submit automatically from pull-request previews or forks.
+
+Current scope: every page in the live sitemap is submitted, including localized routes. URLs removed from the sitemap are not automatically retained or notified as deletions; explicit deleted-URL tracking would be a separate addition. A sitemap index is rejected rather than mistakenly submitted as page URLs.
+
+Protocol reference: [IndexNow documentation](https://www.indexnow.org/documentation).

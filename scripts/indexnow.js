@@ -93,6 +93,11 @@ async function run({
       body: JSON.stringify({host: HOST, key: KEY, keyLocation: KEY_LOCATION, urlList: batch}),
     });
     if (![200, 202].includes(result.status)) {
+      let providerCode;
+      try { providerCode = JSON.parse(result.body).errorCode; } catch { /* Non-JSON error response. */ }
+      if (result.status === 403 && providerCode === 'SiteVerificationNotCompleted') {
+        throw new Error('IndexNow site verification is still pending (HTTP 403). The public key file passed validation, but the provider has not verified the site yet. Retry the workflow after verification completes; no submission was confirmed.');
+      }
       throw new Error(`IndexNow rejected batch (HTTP ${result.status}): ${result.body.slice(0, 500)}. No automatic retry.`);
     }
     log(`IndexNow received ${batch.length} URLs (HTTP ${result.status}${result.status === 202 ? '; key validation pending' : ''}). This does not guarantee indexing.`);
