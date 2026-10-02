@@ -4,6 +4,8 @@ The PPPlayer product website uses Next.js 16, React, next-intl and Tailwind CSS.
 
 ## Local development
 
+Use Node 22 LTS (`.nvmrc`); the production Docker image uses the same supported release line.
+
 ```bash
 npm ci
 npm run dev
@@ -37,11 +39,13 @@ New guides need frontmatter (`title`, `excerpt`, `date`, `author`, `category`, `
 
 `npm run build` creates the standalone output configured in `next.config.ts`. The Dockerfile packages it together with public assets and Markdown content. A local content update does not deploy or publish the website; follow the project's release/deployment process separately.
 
+For standalone acceptance checks, use the Docker startup configuration (`HOSTNAME=0.0.0.0 node server.js`) with public assets and `.next/static` copied into the standalone output. Binding this Next.js version to `127.0.0.1` can trigger default-locale redirect loops because middleware normalizes the address to `localhost`; a `next start` check alone does not exercise standalone deployment behavior.
+
 ## IndexNow
 
 The automatic workflow lives in this repository at `.github/workflows/indexnow.yml`, because Coolify deploys `ppplayer-labs/website` directly. It runs for relevant pushes to `main` and can be started manually from the Actions tab. The former parent-repository workflow is removed to avoid misplaced or duplicate notifications.
 
-`npm run build` first generates `public/indexnow-revision.txt` from website source, translations, content and public assets. The generated file is ignored by Git and included by the Dockerfile's existing public-folder copy. The workflow checks the corresponding live marker every 15 seconds, for up to ten minutes, before reading the production key and sitemap. An older deployment, failed deployment or missing marker fails the job without submitting URLs. No Coolify secret or fixed deployment delay is required. Coolify must build through `npm run build`, as the checked-in Dockerfile already does.
+`npm run build` first generates `public/indexnow-revision.txt` from website source, translations, content and public assets. The generated file is ignored by Git and included by the Dockerfile's existing public-folder copy. The workflow checks the corresponding live marker every 15 seconds, for up to ten minutes, before reading the production key and sitemap. An older deployment, failed deployment or missing marker fails the job without submitting URLs. No Coolify secret or fixed deployment delay is required. Docker configuration and `.nvmrc` are included in the fingerprint so runtime changes also wait for deployment. Coolify must build through `npm run build`, as the checked-in Dockerfile already does.
 
 ```bash
 npm run test:indexnow

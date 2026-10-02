@@ -18,7 +18,7 @@ function sourceRevision(root = ROOT) {
     }
   }
   for (const directory of ['app', 'components', 'content', 'i18n', 'lib', 'messages', 'public']) visit(directory);
-  files.push('middleware.ts', 'next.config.ts', 'package.json', 'package-lock.json', 'postcss.config.mjs', 'tsconfig.json');
+  files.push('Dockerfile', '.dockerignore', '.nvmrc', 'middleware.ts', 'next.config.ts', 'package.json', 'package-lock.json', 'postcss.config.mjs', 'tsconfig.json');
   const hash = createHash('sha256');
   for (const file of files.sort()) {
     const bytes = readFileSync(path.join(root, file));

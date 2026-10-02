@@ -117,11 +117,17 @@ test('source revision reflects deployed content, excludes the marker and local a
   const root = mkdtempSync(path.join(os.tmpdir(), 'ppplayer-indexnow-'));
   t.after(() => rmSync(root, {recursive: true, force: true}));
   for (const name of ['app', 'components', 'content', 'i18n', 'lib', 'messages', 'public']) mkdirSync(path.join(root, name));
-  for (const name of ['middleware.ts', 'next.config.ts', 'package.json', 'package-lock.json', 'postcss.config.mjs', 'tsconfig.json']) writeFileSync(path.join(root, name), name);
+  for (const name of ['Dockerfile', '.dockerignore', '.nvmrc', 'middleware.ts', 'next.config.ts', 'package.json', 'package-lock.json', 'postcss.config.mjs', 'tsconfig.json']) writeFileSync(path.join(root, name), name);
   const before = sourceRevision(root);
   writeFileSync(path.join(root, 'public/indexnow-revision.txt'), 'previous marker');
   writeFileSync(path.join(root, 'public/.DS_Store'), 'local file');
   assert.equal(sourceRevision(root), before);
+  for (const name of ['Dockerfile', '.dockerignore', '.nvmrc']) {
+    writeFileSync(path.join(root, name), `${name} updated runtime`);
+    assert.notEqual(sourceRevision(root), before, `${name} must change the deployment revision`);
+    writeFileSync(path.join(root, name), name);
+    assert.equal(sourceRevision(root), before);
+  }
   writeFileSync(path.join(root, 'messages/en.json'), 'new translation');
   assert.notEqual(sourceRevision(root), before);
   const added = sourceRevision(root);
