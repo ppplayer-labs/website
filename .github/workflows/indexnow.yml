@@ -1,0 +1,45 @@
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'content/**'
+      - 'i18n/**'
+      - 'lib/**'
+      - 'messages/**'
+      - 'public/**'
+      - 'middleware.ts'
+      - 'next.config.ts'
+      - 'package*.json'
+      - 'postcss.config.mjs'
+      - 'tsconfig.json'
+      - 'scripts/indexnow*.js'
+      - '.github/workflows/indexnow.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    if: github.repository == 'ppplayer-labs/website' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test submission handling
+        run: npm run test:indexnow
+      - name: Wait for deployed source and notify IndexNow
+        run: npm run indexnow -- --wait-for-deployment

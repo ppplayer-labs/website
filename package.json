@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "indexnow": "node scripts/indexnow.js"
+    "indexnow": "node scripts/indexnow.js",
+    "prebuild": "node scripts/indexnow-revision.js",
+    "test:indexnow": "node --test scripts/indexnow.test.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",
