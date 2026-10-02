@@ -11,9 +11,10 @@ interface SpotlightLogoProps {
   height?: number;
   className?: string;
   imageClassName?: string;
+  priority?: boolean;
 }
 
-export function SpotlightLogo({ src, alt, width, height, className, imageClassName }: SpotlightLogoProps) {
+export function SpotlightLogo({ src, alt, width, height, className, imageClassName, priority }: SpotlightLogoProps) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -45,6 +46,7 @@ export function SpotlightLogo({ src, alt, width, height, className, imageClassNa
           alt={alt}
           width={width}
           height={height}
+          priority={priority}
           className={cn("relative z-10", imageClassName)}
         />
       ) : (
@@ -52,6 +54,7 @@ export function SpotlightLogo({ src, alt, width, height, className, imageClassNa
           src={src}
           alt={alt}
           fill
+          priority={priority}
           className={cn("relative z-10 object-contain", imageClassName)}
         />
       )}

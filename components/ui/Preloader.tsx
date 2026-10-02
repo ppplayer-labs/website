@@ -40,6 +40,7 @@ export function Preloader() {
               height={80}
               className="rounded-2xl"
               imageClassName="rounded-2xl shadow-2xl"
+              priority={true}
             />
             {/* Subtle pulse loading indicator */}
             <motion.div 

@@ -57,6 +57,7 @@ export default function Navbar() {
               height={28}
               className="rounded-lg group-hover:scale-105 transition-transform duration-300"
               imageClassName="rounded-lg"
+              priority={true}
             />
             <span className="text-white font-semibold text-lg tracking-tight">
               PPPlayer
