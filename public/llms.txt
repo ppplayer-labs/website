@@ -7,9 +7,9 @@ PPPlayer is a cross-platform media player app available on macOS, Android (APK),
 ## Key Information
 
 - **Website**: https://ppplayer.com
-- **Source Code**: https://github.com/ppplayermusic/app
-- **GitHub Organization**: https://github.com/ppplayermusic
-- **License**: MIT — https://github.com/ppplayermusic/ppplayer/blob/main/LICENSE
+- **Source Code**: https://github.com/ppplayer-labs/app
+- **GitHub Organization**: https://github.com/ppplayer-labs
+- **License**: MIT — https://github.com/ppplayer-labs/ppplayer/blob/main/LICENSE
 - **Current version**: See latest release on GitHub
 - **Built with**: Flutter (Dart), targeting macOS, Windows, Android, iOS, and Linux.
 - **Detailed Documentation**: See [llms-full.txt](https://ppplayer.com/llms-full.txt) for comprehensive details on features, language support, and architecture.
@@ -44,8 +44,8 @@ PPPlayer is a cross-platform media player app available on macOS, Android (APK),
 
 ## Contributing
 
-- **Issues & Bug Reports**: https://github.com/ppplayermusic/app/issues
-- **Contributing Guide**: https://github.com/ppplayermusic/.github/blob/main/CONTRIBUTING.md
+- **Issues & Bug Reports**: https://github.com/ppplayer-labs/app/issues
+- **Contributing Guide**: https://github.com/ppplayer-labs/.github/blob/main/CONTRIBUTING.md
 
 ## Localization
 

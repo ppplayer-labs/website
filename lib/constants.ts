@@ -4,11 +4,11 @@ export const SITE_NAME = 'PPPlayer'
 export const SITE_TAGLINE = 'A free, open-source music player. No account. Just play.'
 
 export const PROJECT_LINKS = {
-  organization: 'https://github.com/ppplayermusic',
-  source: 'https://github.com/ppplayermusic/app',
-  contribute: 'https://github.com/ppplayermusic/.github/blob/main/CONTRIBUTING.md',
-  issues: 'https://github.com/ppplayermusic/app/issues',
-  license: 'https://github.com/ppplayermusic/ppplayer/blob/main/LICENSE',
+  organization: 'https://github.com/ppplayer-labs',
+  source: 'https://github.com/ppplayer-labs/app',
+  contribute: 'https://github.com/ppplayer-labs/.github/blob/main/CONTRIBUTING.md',
+  issues: 'https://github.com/ppplayer-labs/app/issues',
+  license: 'https://github.com/ppplayer-labs/ppplayer/blob/main/LICENSE',
 }
 
 // Download links: update when store listings are live
@@ -16,8 +16,8 @@ export const DOWNLOAD_LINKS = {
   ios: 'https://apps.apple.com/app/ppplayer',
   android: 'https://play.google.com/store/apps/details?id=com.ppplayer.app&pcampaignid=web_share',
   windows: 'https://apps.microsoft.com/store/detail/9NKNDF67BG4X?cid=DevShareMCLPCS',
-  macos: 'https://github.com/ppplayermusic/app/releases/latest/download/PPPlayer-macOS.dmg',
-  androidApk: 'https://github.com/ppplayermusic/app/releases/latest/download/PPPlayer-Android.apk',
+  macos: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-macOS.dmg',
+  androidApk: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Android.apk',
 }
 
 export type PlatformConfig = {

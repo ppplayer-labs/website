@@ -3,8 +3,8 @@
 PPPlayer is a free, cross-platform, open-source media player designed for discovery, seamless streaming, and high-fidelity local media playback.
 
 ## Repositories & License
-- **App Repository**: https://github.com/ppplayermusic/app (Flutter/Dart)
-- **Website Repository**: https://github.com/ppplayermusic/website (Next.js)
+- **App Repository**: https://github.com/ppplayer-labs/app (Flutter/Dart)
+- **Website Repository**: https://github.com/ppplayer-labs/website (Next.js)
 - **License**: MIT License
 - **Current Version**: See latest release on GitHub
 

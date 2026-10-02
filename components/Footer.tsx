@@ -70,7 +70,7 @@ export default function Footer() {
               <a href="https://www.instagram.com/ppplayermusic/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white text-sm transition-all duration-300 hover:translate-x-1 w-fit">{t("instagram")}</a>
               <a href="https://www.linkedin.com/company/ppplayer/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white text-sm transition-all duration-300 hover:translate-x-1 w-fit">{t("linkedin")}</a>
               <a href="https://www.facebook.com/ppplayermusic" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white text-sm transition-all duration-300 hover:translate-x-1 w-fit">{t("facebook")}</a>
-              <a href="https://github.com/ppplayermusic" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white text-sm transition-all duration-300 hover:translate-x-1 w-fit">{t("github")}</a>
+              <a href="https://github.com/ppplayer-labs" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white text-sm transition-all duration-300 hover:translate-x-1 w-fit">{t("github")}</a>
             </div>
 
             <div className="flex flex-col gap-3">
@@ -131,7 +131,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://github.com/ppplayermusic"
+              href="https://github.com/ppplayer-labs"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="PPPlayer on GitHub"
