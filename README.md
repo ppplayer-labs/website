@@ -1,44 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PPPlayer website
 
-## Getting Started
+The PPPlayer product website uses Next.js 16, React, next-intl and Tailwind CSS. It includes localized product pages, downloads, release history and Markdown guides.
 
-First, run the development server:
+## Local development
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. Copy `.env.example` to `.env.local` only when optional integrations such as advertising or cookie-banner configuration are needed.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+npx tsc --noEmit
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Read `AGENTS.md` and the installed Next.js guides in `node_modules/next/dist/docs/` before changing framework behavior.
 
-## Environment Variables
+## Product content
 
-To run the project locally with full features (like Ads and Cookie Banners), you will need to set up environment variables. 
+- `components/sections/PlaybackUpdatesSection.tsx`: upcoming playback features, shared by the homepage and changelog.
+- `lib/playback-updates.ts`: English and Brazilian Portuguese copy for that section. Other locales use English with a matching `lang` attribute until translated; this does not alter existing locale messages.
+- `content/blog/play-on-local-files-ios/{en,pt-BR}.md`: usage guide for local files, Play On, queue and iPhone system controls. Existing article routes fall back to English when a translation is missing.
+- `messages/*.json`: existing localized UI and released changelog entries.
+- `lib/constants.ts`: platform availability and download links.
+- `public/llms-full.txt`: machine-readable product information; keep it consistent with the visible site.
 
-1. Copy the example file: `cp .env.example .env.local`
-2. Configure the AdSense variables if you want to test ad rendering.
-3. Toggle `NEXT_PUBLIC_USE_CUSTOM_COOKIE_BANNER` to `true` if you want to test the custom cookie consent fallback logic.
+Mark working-tree features **upcoming** until a public release includes them. Do not invent a release number or claim that existing downloads include development changes. Keep iOS availability distinct from physical-device development testing. Cast/DLNA implementation and fake-receiver tests do not establish physical receiver compatibility.
 
-## Learn More
+New guides need frontmatter (`title`, `excerpt`, `date`, `author`, `category`, `readTime`, `isDraft`). The blog and sitemap discover them automatically. Use the reader's locale in localized internal links.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`npm run build` creates the standalone output configured in `next.config.ts`. The Dockerfile packages it together with public assets and Markdown content. A local content update does not deploy or publish the website; follow the project's release/deployment process separately.

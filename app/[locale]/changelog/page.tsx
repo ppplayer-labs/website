@@ -1,6 +1,7 @@
 import {Link} from '@/i18n/routing'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import PlaybackUpdatesSection from '@/components/sections/PlaybackUpdatesSection'
 
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 import { routing } from '@/i18n/routing';
@@ -42,6 +43,8 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
             <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 text-white">{t('title')}</h1>
             <p className="text-slate-400 text-lg">{t('subtitle')}</p>
           </div>
+
+          <PlaybackUpdatesSection locale={locale} compact />
 
           <div className="relative border-l border-white/10 ml-4 md:ml-8 space-y-24">
 

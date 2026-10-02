@@ -14,7 +14,20 @@ PPPlayer is a free, cross-platform, open-source media player designed for discov
 
 ## Playback Features
 - **Core Playback**: Supports audio/video streaming, local media playback, subtitles, M3U network streams, playlists, artist discovery, infinite artist radio, and related artists exploration.
-- **Platform Integration**: Picture-in-Picture (PiP) and system-level background playback are supported across major mobile and desktop platforms using standard OS integrations.
+- **Platform Integration**: Picture-in-Picture (PiP), background playback and system controls depend on platform and source. The development iOS build forwards both native and WebKit system play/pause commands to explicit playback intent.
+
+## Upcoming Playback Update (Development Tree, October 2, 2026)
+
+These features are in development and do not imply inclusion in current public downloads or public iOS availability.
+
+- **Durable iOS music imports**: New imports are managed copies that remain available after reopening. Old entries pointing to deleted temporary files require reimporting the originals.
+- **Play On**: In-app iOS AirPlay picker with active receiver name and selection. macOS audio routing uses system controls. AirPlay uses the local engine and Apple routing, not LocalMediaServer.
+- **Network outputs**: Cast backends exist for Android/iOS; DLNA depends on platform capabilities. iOS DLNA discovery requires approved multicast capability and an enabled build configuration. YouTube is not supported through the Cast/DLNA media-URL handoff.
+- **Local file serving**: Apple security-scoped bookmarks resolve at file acquisition, and authorized file leases remain active while accepted HTTP reads finish. Cast/DLNA receivers must support the source format; PPPlayer does not transcode.
+- **Player layout**: Dedicated Queue button, responsive video controls and secondary options menu. Local audio displays its own artwork or fallback instead of stale video thumbnails.
+- **iPhone system pause**: WebKit media-session actions reach Flutter intent; explicit pause cancels recovery, while background recovery remains available for involuntary pauses.
+- **Validation**: Physical iPhone-to-MacBook local-music AirPlay and iPhone system pause/play were checked. Automated local-file-to-fake-Cast HTTP handoff passed. Physical Chromecast and DLNA validation remain pending.
+- **Guide**: https://ppplayer.com/blog/play-on-local-files-ios (English); https://ppplayer.com/pt-BR/blog/play-on-local-files-ios (Brazilian Portuguese).
 
 ## Supported Platforms and Availability
 - **Android**: Verified public listing on Google Play (`https://play.google.com/store/apps/details?id=com.ppplayer.app`). Direct APK downloads available via GitHub Releases.
@@ -24,7 +37,7 @@ PPPlayer is a free, cross-platform, open-source media player designed for discov
 *(Note: iOS TestFlight and App Store availability claims have been removed as there are no verified public URLs).*
 
 ## Localization & Language Support
-The website and the application maintain complete structural and translation parity across **38 corresponding locales**. The remaining untranslated terms are intentional cross-language branding (e.g., "Daily Mix", "Release Radar") or shared UI terminology. The 38 languages are fully released and supported in the latest version of the app.
+The website routes and application support **38 corresponding locales**. New playback-update editorial content is available in English and Brazilian Portuguese, with English fallback for other website locales. This does not imply that every article or newly added feature description has been translated into all languages.
 
 ### Website
 The website is explicitly configured to support **38 languages**:
@@ -34,5 +47,4 @@ English (`en`), Arabic (`ar`), Bengali (`bn`), Czech (`cs`), Danish (`da`), Dutc
 The application generates and supports all **38 corresponding languages** at runtime:
 - **Selectable in App Settings (38 languages)**: Users can manually select any of the 38 languages (plus "System Default") from the settings menu. 
 - **Parity Note**: The app uses `pt` for Brazilian Portuguese, corresponding to the website's `pt-BR`.
-
 

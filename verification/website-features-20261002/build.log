@@ -1,0 +1,46 @@
+
+> ppplayer-web@2.0.1 build
+> next build
+
+▲ Next.js 16.2.2 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  ✓ optimizeCss
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.9s
+  Running TypeScript ...
+  Finished TypeScript in 2.6s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/844) ...
+  Generating static pages using 7 workers (211/844) 
+  Generating static pages using 7 workers (422/844) 
+  Generating static pages using 7 workers (633/844) 
+✓ Generating static pages using 7 workers (844/844) in 1258ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /_not-found
+├ ƒ /[locale]
+├ ƒ /[locale]/blog
+├ ƒ /[locale]/blog/[slug]
+├ ƒ /[locale]/blog/rss.xml
+├ ƒ /[locale]/changelog
+├ ƒ /[locale]/download
+├ ƒ /[locale]/privacy
+├ ƒ /[locale]/support
+├ ƒ /[locale]/terms
+├ ƒ /api/spotify/token
+├ ƒ /api/youtube/search
+├ ○ /apple-icon.png
+├ ○ /icon.png
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

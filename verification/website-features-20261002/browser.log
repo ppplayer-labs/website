@@ -1,0 +1,22 @@
+PASS / 320px: localized/fallback copy, four cards, guide link, release status
+PASS / 390px: localized/fallback copy, four cards, guide link, release status
+PASS / 1280px: localized/fallback copy, four cards, guide link, release status
+PASS /pt-BR 320px: localized/fallback copy, four cards, guide link, release status
+PASS /pt-BR 390px: localized/fallback copy, four cards, guide link, release status
+PASS /pt-BR 1280px: localized/fallback copy, four cards, guide link, release status
+PASS /fr 320px: localized/fallback copy, four cards, guide link, release status
+PASS /fr 390px: localized/fallback copy, four cards, guide link, release status
+PASS /fr 1280px: localized/fallback copy, four cards, guide link, release status
+PASS /ar 320px: localized/fallback copy, four cards, guide link, release status
+PASS /ar 390px: localized/fallback copy, four cards, guide link, release status
+PASS /ar 1280px: localized/fallback copy, four cards, guide link, release status
+PASS /changelog 320px: localized/fallback copy, four cards, guide link, release status
+PASS /changelog 390px: localized/fallback copy, four cards, guide link, release status
+PASS /changelog 1280px: localized/fallback copy, four cards, guide link, release status
+PASS /pt-BR/changelog 320px: localized/fallback copy, four cards, guide link, release status
+PASS /pt-BR/changelog 390px: localized/fallback copy, four cards, guide link, release status
+PASS /pt-BR/changelog 1280px: localized/fallback copy, four cards, guide link, release status
+PASS /blog/play-on-local-files-ios: guide renders without mobile overflow
+PASS /pt-BR/blog/play-on-local-files-ios: guide renders without mobile overflow
+PASS /fr/blog/play-on-local-files-ios: guide renders without mobile overflow
+PASS all 38 locale changelogs; no browser runtime errors

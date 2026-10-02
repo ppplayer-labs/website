@@ -1,0 +1,7 @@
+
+> ppplayer-web@2.0.1 lint
+> eslint
+
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme

@@ -8,6 +8,7 @@ import ArtistRadioSection from '@/components/sections/ArtistRadioSection'
 import NoAccountSection from '@/components/sections/NoAccountSection'
 import PlatformsSection from '@/components/sections/PlatformsSection'
 import FeatureGallerySection from '@/components/sections/FeatureGallerySection'
+import PlaybackUpdatesSection from '@/components/sections/PlaybackUpdatesSection'
 import DownloadCTA from '@/components/sections/DownloadCTA'
 import OpenSourceSection from '@/components/sections/OpenSourceSection'
 
@@ -52,6 +53,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <PressPlaySection />
         <ArtistRadioSection />
         <FeatureGallerySection />
+        <PlaybackUpdatesSection locale={locale} />
         <NoAccountSection />
         <PlatformsSection />
         <OpenSourceSection />

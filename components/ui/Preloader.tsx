@@ -8,22 +8,13 @@ export function Preloader() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // If the document is already fully loaded (e.g., during client-side navigation or fast loads)
-    // we still want to show it briefly for the premium effect, but we can shorten the delay.
-    const isAlreadyLoaded = document.readyState === 'complete'
-    
-    const finishLoading = () => {
-      // Add a small artificial delay so it feels deliberate and premium,
-      // and doesn't just flash on the screen.
-      setTimeout(() => setIsLoading(false), isAlreadyLoaded ? 400 : 800)
-    }
-
-    if (isAlreadyLoaded) {
-      finishLoading()
-    } else {
-      window.addEventListener('load', finishLoading)
-      return () => window.removeEventListener('load', finishLoading)
-    }
+    // Hydration makes the page usable. Do not keep it covered while images,
+    // advertising or other external resources delay the window load event.
+    const timer = window.setTimeout(
+      () => setIsLoading(false),
+      document.readyState === 'complete' ? 400 : 800,
+    )
+    return () => window.clearTimeout(timer)
   }, [])
 
   return (
