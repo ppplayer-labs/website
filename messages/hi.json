@@ -126,29 +126,29 @@
     "reqTitle": "{platform} आवश्यकताएँ",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina or newer",
+        "os": "macOS 10.15 Catalina या नया संस्करण",
         "arch": "Apple Silicon & Intel (Universal)​",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (अनुशंसित)"
       },
       "windows": {
-        "os": "Windows 10 or later (64-bit)",
+        "os": "Windows 10 या बाद का संस्करण (64-बिट)",
         "arch": "x64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (अनुशंसित)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 or newer (Experimental)",
+        "os": "Ubuntu 20.04 या नया संस्करण (प्रयोगात्मक)",
         "arch": "x86_64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (अनुशंसित)"
       },
       "ios": {
-        "os": "iOS 13.0 or newer",
+        "os": "iOS 14.0 या नया संस्करण",
         "arch": "ARM64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (अनुशंसित)"
       },
       "android": {
-        "os": "Android 7.0 (API 24) or newer",
+        "os": "Android 7.0 (API 24) या नया संस्करण",
         "arch": "ARM64 / ARM / x86_64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (अनुशंसित)"
       }
     }
   },
@@ -607,5 +607,24 @@
       "education": "Education​",
       "product": "Product​"
     }
+  },
+  "playbackUpdates": {
+    "local": "iOS में आयात किए गए गाने ऐप दोबारा खोलने पर अपनी कवर तस्वीरों के साथ उपलब्ध रहते हैं।",
+    "output": "iPhone या Mac पर AirPlay चुनें। Cast और DLNA संगत मीडिया का समर्थन करते हैं।",
+    "queue": "कतार के लिए अलग बटन और स्क्रीन के अनुसार ढलने वाले वीडियो नियंत्रण।",
+    "pause": "iPhone की लॉक स्क्रीन या कंट्रोल सेंटर से रोका गया प्लेबैक रुका रहता है।",
+    "note": "iOS अभी सार्वजनिक रूप से उपलब्ध नहीं है। असली Chromecast पर परीक्षण बाकी है।",
+    "localTitle": "स्थानीय संगीत",
+    "outputTitle": "इस पर चलाएँ",
+    "queueTitle": "कतार",
+    "pauseTitle": "रोकें"
+  },
+  "common": {
+    "language": "भाषा",
+    "menu": "अधिक विकल्प",
+    "home": "होम",
+    "artist": "कलाकार",
+    "radio": "रेडियो स्टेशन",
+    "player": "पूर्ण स्क्रीन"
   }
 }

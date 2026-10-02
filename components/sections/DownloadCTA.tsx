@@ -175,7 +175,7 @@ export default function DownloadCTA() {
           >
             <SpotlightLogo 
               src="/logo.png" 
-              alt="PPPlayer Logo Mark" 
+              alt=""
               className="w-48 h-48 md:w-64 md:h-64 pointer-events-auto"
               imageClassName="rounded-[3rem] filter grayscale mix-blend-screen"
             />

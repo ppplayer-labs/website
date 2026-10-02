@@ -29,7 +29,7 @@ export const SpotlightText = ({ children, className }: SpotlightTextProps) => {
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={cn("relative inline-grid", className)}
+      className={cn("relative inline-grid max-w-full [overflow-wrap:anywhere]", className)}
     >
       {/* Background layer: the default text content and colors */}
       <span className="col-start-1 row-start-1 z-10">
@@ -39,13 +39,11 @@ export const SpotlightText = ({ children, className }: SpotlightTextProps) => {
       {/* The spotlight gradient layer that tracks the mouse and is clipped to the text */}
       <span
         aria-hidden="true"
-        className="col-start-1 row-start-1 z-20 pointer-events-none"
+        className="absolute inset-0 z-20 pointer-events-none"
         style={{
-          padding: '0.5em',
-          margin: '-0.5em',
           opacity: isHovered ? 1 : 0,
           transition: 'opacity 0.3s ease',
-          backgroundImage: `radial-gradient(150px circle at calc(${mousePosition.x}px + 0.5em) calc(${mousePosition.y}px + 0.5em), #fb7185 0%, #e11d48 30%, #9f1239 50%, transparent 100%)`,
+          backgroundImage: `radial-gradient(150px circle at ${mousePosition.x}px ${mousePosition.y}px, #fb7185 0%, #e11d48 30%, #9f1239 50%, transparent 100%)`,
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',

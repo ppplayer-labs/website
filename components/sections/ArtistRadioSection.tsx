@@ -6,6 +6,7 @@ import { SpotlightText } from '@/components/ui/SpotlightText'
 import { MacOSWindowFrame } from '@/components/ui/MacOSWindowFrame'
 
 export default function ArtistRadioSection() {
+  const common = useTranslations('common');
   const t = useTranslations('artistRadio');
   return (
     <section className="py-32 md:py-48 bg-[#fcfcfc] text-black">
@@ -34,7 +35,7 @@ export default function ArtistRadioSection() {
             <MacOSWindowFrame title="PPPlayer">
               <Image
                 src="/images/screenshot-search-artists.png"
-                alt="PPPlayer Radio"
+                alt={common("radio")}
                 width={1024}
                 height={576}
                 style={{ width: '100%', height: 'auto', display: 'block' }}

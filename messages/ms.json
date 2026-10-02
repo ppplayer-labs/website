@@ -139,7 +139,7 @@
         "mem": "4 GB RAM (Disyorkan)"
       },
       "ios": {
-        "os": "iOS 13.0 atau lebih baru",
+        "os": "iOS 14.0 atau lebih baru",
         "arch": "ARM64",
         "mem": "2 GB RAM (Disyorkan)"
       },
@@ -605,5 +605,24 @@
       "education": "Pendidikan",
       "product": "Produk"
     }
+  },
+  "playbackUpdates": {
+    "local": "Lagu yang diimport pada iOS kekal tersedia apabila aplikasi dibuka semula, dengan kulit albumnya sendiri.",
+    "output": "Pilih AirPlay pada iPhone atau Mac. Cast dan DLNA menyokong media yang serasi.",
+    "queue": "Butang baris gilir khusus dan kawalan video yang menyesuaikan skrin.",
+    "pause": "Jeda daripada skrin kunci atau Pusat Kawalan iPhone kekal dijeda.",
+    "note": "iOS belum tersedia kepada umum. Ujian menggunakan Chromecast fizikal masih belum dijalankan.",
+    "localTitle": "Muzik Tempatan",
+    "outputTitle": "Mainkan pada",
+    "queueTitle": "GILIRAN",
+    "pauseTitle": "Jeda"
+  },
+  "common": {
+    "language": "Bahasa",
+    "menu": "Lagi pilihan",
+    "home": "Laman Utama",
+    "artist": "Artis",
+    "radio": "Stesen Radio",
+    "player": "Skrin penuh"
   }
 }

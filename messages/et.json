@@ -141,7 +141,7 @@
         "mem": "4 GB RAM (soovitatav)"
       },
       "ios": {
-        "os": "iOS 13.0 või uuem",
+        "os": "iOS 14.0 või uuem",
         "arch": "ARM64",
         "mem": "2 GB RAM (soovitatav)"
       },
@@ -607,5 +607,24 @@
       "education": "Haridus",
       "product": "Toode"
     }
+  },
+  "playbackUpdates": {
+    "local": "iOS-i imporditud lood on pärast rakenduse taasavamist saadaval oma kaanepiltidega.",
+    "output": "Vali AirPlay iPhone’is või Macis. Cast ja DLNA toetavad ühilduvat meediat.",
+    "queue": "Eraldi järjekorranupp ja ekraaniga kohanduvad video juhtnupud.",
+    "pause": "iPhone’i lukustuskuvalt või Juhtimiskeskusest pausile pandud taasesitus jääb pausile.",
+    "note": "iOS pole veel avalikult saadaval. Füüsilise Chromecastiga testimine on veel ees.",
+    "localTitle": "Kohalik muusika",
+    "outputTitle": "Esita seadmes",
+    "queueTitle": "JÄRJEKORD",
+    "pauseTitle": "Paus"
+  },
+  "common": {
+    "language": "Keel",
+    "menu": "Rohkem valikuid",
+    "home": "Avaleht",
+    "artist": "Esitaja",
+    "radio": "Raadiojaamad",
+    "player": "Täisekraan"
   }
 }

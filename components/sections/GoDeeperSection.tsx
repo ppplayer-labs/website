@@ -6,6 +6,7 @@ import { SpotlightText } from '@/components/ui/SpotlightText'
 import { MacOSWindowFrame } from '@/components/ui/MacOSWindowFrame'
 
 export default function GoDeeperSection() {
+  const common = useTranslations('common');
   const t = useTranslations('goDeeper');
   return (
     <section className="py-24 md:py-32 bg-[#fcfcfc] text-black border-t border-gray-100 overflow-hidden">
@@ -47,7 +48,7 @@ export default function GoDeeperSection() {
             <MacOSWindowFrame title="PPPlayer">
               <Image
                 src="/images/screenshot-library-artists.png"
-                alt="PPPlayer Artist Page"
+                alt={common("artist")}
                 width={1024}
                 height={576}
                 style={{ width: '100%', height: 'auto', display: 'block' }}

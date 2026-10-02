@@ -126,29 +126,29 @@
     "reqTitle": "{platform} のシステム要件",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina or newer",
+        "os": "macOS 10.15 Catalina以降",
         "arch": "Appleシリコン＆Intel（ユニバーサル）",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM（推奨）"
       },
       "windows": {
-        "os": "Windows 10 or later (64-bit)",
+        "os": "Windows 10以降（64ビット）",
         "arch": "x64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM（推奨）"
       },
       "linux": {
-        "os": "Ubuntu 20.04 or newer (Experimental)",
+        "os": "Ubuntu 20.04以降（実験的）",
         "arch": "x86_64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM（推奨）"
       },
       "ios": {
-        "os": "iOS 13.0 or newer",
+        "os": "iOS 14.0以降",
         "arch": "ARM64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM（推奨）"
       },
       "android": {
-        "os": "Android 7.0 (API 24) or newer",
+        "os": "Android 7.0（API 24）以降",
         "arch": "ARM64 / ARM / x86_64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM（推奨）"
       }
     }
   },
@@ -607,5 +607,24 @@
       "education": "教育",
       "product": "プロダクト"
     }
+  },
+  "playbackUpdates": {
+    "local": "iOSに取り込んだ曲は、アプリを開き直しても独自のアートワークとともに利用できます。",
+    "output": "iPhoneやMacでAirPlayを選べます。CastとDLNAは対応メディアを再生できます。",
+    "queue": "専用のキューボタンと、画面サイズに合わせた動画コントロール。",
+    "pause": "iPhoneのロック画面やコントロールセンターで一時停止すると、その状態が維持されます。",
+    "note": "iOS版はまだ一般公開されていません。実機Chromecastでのテストは未実施です。",
+    "localTitle": "ローカルの音楽",
+    "outputTitle": "再生先",
+    "queueTitle": "キュー",
+    "pauseTitle": "一時停止"
+  },
+  "common": {
+    "language": "言語",
+    "menu": "その他のオプション",
+    "home": "ホーム",
+    "artist": "アーティスト",
+    "radio": "ラジオステーション",
+    "player": "全画面"
   }
 }

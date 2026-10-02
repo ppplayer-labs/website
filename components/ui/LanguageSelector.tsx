@@ -1,6 +1,6 @@
 'use client'
 
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/routing';
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -48,6 +48,7 @@ const languages = [
 
 export function LanguageSelector() {
   const locale = useLocale();
+  const t = useTranslations('common');
   const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -75,7 +76,7 @@ export function LanguageSelector() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 bg-transparent text-slate-400 hover:text-white text-sm font-medium py-1 outline-none transition-colors"
-        aria-label="Select language"
+        aria-label={t('language')} aria-expanded={isOpen}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

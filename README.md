@@ -22,9 +22,10 @@ Read `AGENTS.md` and the installed Next.js guides in `node_modules/next/dist/doc
 ## Product content
 
 - `components/sections/PlaybackUpdatesSection.tsx`: upcoming playback features, shared by the homepage and changelog.
-- `lib/playback-updates.ts`: English and Brazilian Portuguese copy for that section. Other locales use English with a matching `lang` attribute until translated; this does not alter existing locale messages.
+- `messages/*.json` → `playbackUpdates`: playback feature copy in all 38 supported languages, with shared interface terminology in `common`. The section inherits the page’s text direction.
 - `content/blog/play-on-local-files-ios/{en,pt-BR}.md`: usage guide for local files, Play On, queue and iPhone system controls. Existing article routes fall back to English when a translation is missing.
-- `messages/*.json`: existing localized UI and released changelog entries.
+- `messages/*.json`: localized UI, released changelog entries and system requirements. iOS requires 14.0 or later.
+- `scripts/localization/`: explicit playback/requirements translations and a repeatable catalog updater. Shared terms come from the app catalogs; there is no automatic English fallback.
 - `lib/constants.ts`: platform availability and download links.
 - `public/llms-full.txt`: machine-readable product information; keep it consistent with the visible site.
 

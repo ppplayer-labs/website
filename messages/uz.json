@@ -139,7 +139,7 @@
         "mem": "4 GB RAM (Tavsiya etiladi)"
       },
       "ios": {
-        "os": "iOS 13.0 yoki undan yangiroq",
+        "os": "iOS 14.0 yoki undan yangiroq",
         "arch": "ARM64",
         "mem": "2 GB RAM (Tavsiya etiladi)"
       },
@@ -605,5 +605,24 @@
       "education": "Ta'lim",
       "product": "Mahsulot"
     }
+  },
+  "playbackUpdates": {
+    "local": "iOS’ga import qilingan qo‘shiqlar ilova qayta ochilganda o‘z muqovalari bilan mavjud bo‘ladi.",
+    "output": "iPhone yoki Mac’da AirPlay’ni tanlang. Cast va DLNA mos mediani qo‘llab-quvvatlaydi.",
+    "queue": "Navbat uchun alohida tugma va ekranga moslashadigan video boshqaruvlari.",
+    "pause": "iPhone qulflangan ekrani yoki Boshqaruv markazidan pauza qilinganda ijro pauzada qoladi.",
+    "note": "iOS hali ommaga taqdim etilmagan. Haqiqiy Chromecast qurilmasida sinov hali o‘tkazilmagan.",
+    "localTitle": "Mahalliy musiqa",
+    "outputTitle": "Shu qurilmada ijro etish",
+    "queueTitle": "NAVBAT",
+    "pauseTitle": "Pauza"
+  },
+  "common": {
+    "language": "Til",
+    "menu": "Ko'proq imkoniyatlar",
+    "home": "Asosiy",
+    "artist": "Ijrochi",
+    "radio": "Radio stansiyalar",
+    "player": "To‘liq ekran"
   }
 }

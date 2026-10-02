@@ -131,22 +131,22 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
         <article className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="mb-10">
             <Link href="/blog" className="text-slate-400 hover:text-white transition-colors mb-8 inline-block">
-              {t.has('back') ? t('back') : '← Back to Blog'}
+              {t('back')}
             </Link>
             
             {isFallback && (
               <div className="mb-8 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg text-yellow-200/80">
-                {t.has('translationUnavailable') ? t('translationUnavailable') : 'This article is not available in your language.'}
+                {t('translationUnavailable')}
               </div>
             )}
 
             <div className="flex items-center gap-3 text-sm font-medium text-slate-400 mb-6">
               <span className="text-blue-400">{t.has(`categories.${post.category.toLowerCase()}`) ? t(`categories.${post.category.toLowerCase()}`) : post.category}</span>
               <span>•</span>
-              <span>{post.readTime} {t.has('minRead') ? t('minRead') : 'min read'}</span>
+              <span>{post.readTime} {t('minRead')}</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 lang={isFallback ? "en" : locale} className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               {post.title}
             </h1>
             
@@ -157,7 +157,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
                 </div>
                 <div>
                   <div className="text-white font-medium">{post.author}</div>
-                  <div className="text-slate-400 text-sm">{t.has('publishedOn') ? t('publishedOn') : 'Published on'} {post.date}</div>
+                  <div className="text-slate-400 text-sm">{t('publishedOn')} {post.date}</div>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
             )}
           </div>
 
-          <div className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-img:rounded-xl">
+          <div lang={isFallback ? "en" : locale} className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-img:rounded-xl">
             {isAdEligible && contentParts.length > 1 ? (
               <>
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{contentParts[0]}</ReactMarkdown>

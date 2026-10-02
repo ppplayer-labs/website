@@ -1,0 +1,9 @@
+locale	macos	windows	linux	ios	android	memory
+bn	macOS 10.15 Catalina বা পরবর্তী সংস্করণ	Windows 10 বা পরবর্তী সংস্করণ (৬৪-বিট)	Ubuntu 20.04 বা পরবর্তী সংস্করণ (পরীক্ষামূলক)	iOS 14.0 বা পরবর্তী সংস্করণ	Android 7.0 (API 24) বা পরবর্তী সংস্করণ	{size} GB RAM (প্রস্তাবিত)
+hi	macOS 10.15 Catalina या नया संस्करण	Windows 10 या बाद का संस्करण (64-बिट)	Ubuntu 20.04 या नया संस्करण (प्रयोगात्मक)	iOS 14.0 या नया संस्करण	Android 7.0 (API 24) या नया संस्करण	{size} GB RAM (अनुशंसित)
+hu	macOS 10.15 Catalina vagy újabb	Windows 10 vagy újabb (64 bites)	Ubuntu 20.04 vagy újabb (kísérleti)	iOS 14.0 vagy újabb	Android 7.0 (API 24) vagy újabb	{size} GB RAM (ajánlott)
+ja	macOS 10.15 Catalina以降	Windows 10以降（64ビット）	Ubuntu 20.04以降（実験的）	iOS 14.0以降	Android 7.0（API 24）以降	{size} GB RAM（推奨）
+kk	macOS 10.15 Catalina немесе жаңарақ	Windows 10 немесе кейінгі нұсқа (64 бит)	Ubuntu 20.04 немесе жаңарақ (эксперименттік)	iOS 14.0 немесе жаңарақ	Android 7.0 (API 24) немесе жаңарақ	{size} GB RAM (ұсынылады)
+pcm	macOS 10.15 Catalina or newer version	Windows 10 or newer version (64-bit)	Ubuntu 20.04 or newer version (na trial)	iOS 14.0 or newer version	Android 7.0 (API 24) or newer version	{size} GB RAM (wey we recommend)
+tr	macOS 10.15 Catalina veya daha yeni	Windows 10 veya üzeri (64 bit)	Ubuntu 20.04 veya daha yeni (deneysel)	iOS 14.0 veya daha yeni	Android 7.0 (API 24) veya daha yeni	{size} GB RAM (önerilen)
+zh	macOS 10.15 Catalina或更高版本	Windows 10或更高版本（64位）	Ubuntu 20.04或更高版本（实验性）	iOS 14.0或更高版本	Android 7.0（API 24）或更高版本	{size} GB RAM（推荐）

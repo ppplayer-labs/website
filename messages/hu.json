@@ -126,29 +126,29 @@
     "reqTitle": "{platform} rendszerkövetelmények",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina or newer",
+        "os": "macOS 10.15 Catalina vagy újabb",
         "arch": "Apple Silicon és Intel (Univerzális)",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (ajánlott)"
       },
       "windows": {
-        "os": "Windows 10 or later (64-bit)",
+        "os": "Windows 10 vagy újabb (64 bites)",
         "arch": "x64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (ajánlott)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 or newer (Experimental)",
+        "os": "Ubuntu 20.04 vagy újabb (kísérleti)",
         "arch": "x86_64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (ajánlott)"
       },
       "ios": {
-        "os": "iOS 13.0 or newer",
+        "os": "iOS 14.0 vagy újabb",
         "arch": "ARM64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (ajánlott)"
       },
       "android": {
-        "os": "Android 7.0 (API 24) or newer",
+        "os": "Android 7.0 (API 24) vagy újabb",
         "arch": "ARM64 / ARM / x86_64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (ajánlott)"
       }
     }
   },
@@ -607,5 +607,24 @@
       "education": "Oktatás",
       "product": "Termék"
     }
+  },
+  "playbackUpdates": {
+    "local": "Az iOS-re importált dalok az alkalmazás újranyitásakor is elérhetők, saját borítójukkal.",
+    "output": "Válaszd az AirPlayt iPhone-on vagy Macen. A Cast és a DLNA támogatja a kompatibilis médiát.",
+    "queue": "Külön várólista-gomb és a képernyőhöz igazodó videóvezérlők.",
+    "pause": "Az iPhone zárolási képernyőjéről vagy Vezérlőközpontjából indított szünet megmarad.",
+    "note": "Az iOS-verzió még nem nyilvános. A fizikai Chromecaston végzett tesztelés még hátravan.",
+    "localTitle": "Helyi zene",
+    "outputTitle": "Lejátszás ezen",
+    "queueTitle": "VÁRÓLISTA",
+    "pauseTitle": "Szünet"
+  },
+  "common": {
+    "language": "Nyelv",
+    "menu": "További beállítások",
+    "home": "Főoldal",
+    "artist": "Előadó",
+    "radio": "Rádióállomások",
+    "player": "Teljes képernyő"
   }
 }

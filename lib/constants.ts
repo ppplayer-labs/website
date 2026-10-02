@@ -99,7 +99,7 @@ export const PLATFORMS: PlatformConfig[] = [
     color: 'from-slate-400 to-slate-200',
     isAvailable: false,
     requirements: {
-      os: 'iOS 13.0 or newer',
+      os: 'iOS 14.0 or newer',
       architecture: 'ARM64',
       memory: '2 GB RAM (Recommended)',
     }

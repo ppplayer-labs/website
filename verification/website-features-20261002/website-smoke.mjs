@@ -24,13 +24,10 @@ const base = process.env.PP_WEBSITE_PREVIEW_URL || 'http://localhost:3110';
     if (response.url().startsWith(base + '/_next/') && response.status() >= 400) failedAssets.push(response.url());
   });
   try {
-    for (const [route, lang, title] of [
-      ['/', 'en', 'Your library. More ways to play.'],
-      ['/pt-BR', 'pt-BR', 'Sua biblioteca. Mais formas de ouvir.'],
-      ['/fr', 'en', 'Your library. More ways to play.'],
-      ['/ar', 'en', 'Your library. More ways to play.'],
-      ['/changelog', 'en', 'Your library. More ways to play.'],
-      ['/pt-BR/changelog', 'pt-BR', 'Sua biblioteca. Mais formas de ouvir.'],
+    const messages = locale => JSON.parse(fs.readFileSync(`${root}/messages/${locale}.json`, 'utf8'));
+    for (const [route, lang] of [
+      ['/', 'en'], ['/pt-BR', 'pt-BR'], ['/de', 'de'], ['/fr', 'fr'], ['/ar', 'ar'],
+      ['/changelog', 'en'], ['/pt-BR/changelog', 'pt-BR'],
     ]) {
       for (const width of [320, 390, 1280]) {
         await page.setViewport({ width, height: 844 });
@@ -47,17 +44,19 @@ const base = process.env.PP_WEBSITE_PREVIEW_URL || 'http://localhost:3110';
         assert.ok(section, route);
         const data = await section.evaluate(el => ({
           lang: el.lang, text: el.textContent,
-          heading: el.querySelector('h2').textContent,
+          heading: (() => { const heading = el.querySelector('h2').cloneNode(true); heading.querySelectorAll('[aria-hidden="true"]').forEach(node => node.remove()); return heading.textContent; })(),
           items: el.querySelectorAll('h3').length,
           links: [...el.querySelectorAll('a')].map(a => a.getAttribute('href')),
           width: el.getBoundingClientRect().width,
         }));
         assert.equal(data.lang, lang);
-        assert.equal(data.heading, title);
+        assert.equal(data.heading, messages(lang).platforms.title);
         assert.equal(data.items, 4);
         assert.ok(data.width <= width, `section overflows ${route} at ${width}`);
         assert.ok(data.links.some(h => h.endsWith('/blog/play-on-local-files-ios')));
-        assert.ok(data.text.includes(lang === 'pt-BR' ? 'pendentes' : 'pending'));
+        assert.ok(data.text.includes(messages(lang).playbackUpdates.note));
+        assert.equal(await section.evaluate(el => getComputedStyle(el).direction), lang === 'ar' ? 'rtl' : 'ltr');
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${route} ${width}px`);
         const prefix = route === '/' ? 'en' : route === '/pt-BR' ? 'pt-BR' : null;
         if (prefix && [390, 1280].includes(width)) {
           // Capture the normal viewport with navigation above the section.
@@ -65,7 +64,7 @@ const base = process.env.PP_WEBSITE_PREVIEW_URL || 'http://localhost:3110';
           await page.evaluate(() => window.scrollBy({ top: -64, behavior: 'instant' }));
           await page.screenshot({ path: `${output}/${prefix}-${width}.png` });
         }
-        console.log(`PASS ${route} ${width}px: localized/fallback copy, four cards, guide link, release status`);
+        console.log(`PASS ${route} ${width}px: translated copy, four cards, guide link, release status`);
       }
     }
     for (const route of ['/blog/play-on-local-files-ios', '/pt-BR/blog/play-on-local-files-ios', '/fr/blog/play-on-local-files-ios']) {
@@ -90,6 +89,11 @@ const base = process.env.PP_WEBSITE_PREVIEW_URL || 'http://localhost:3110';
       const html = await response.text();
       assert.ok(html.includes('id="playback-updates"'), locale);
       assert.ok(!html.includes('MISSING_MESSAGE'), locale);
+      const text = await page.evaluate(html => new DOMParser().parseFromString(html, 'text/html').querySelector('#playback-updates').textContent, html);
+      assert.ok(text.includes(messages(locale).playbackUpdates.note), `${locale}: translated release status`);
+      for (const key of ['local', 'output', 'queue', 'pause']) {
+        assert.ok(text.includes(messages(locale).playbackUpdates[key]), `${locale}: translated ${key}`);
+      }
     }
     assert.deepEqual(errors, []);
     assert.deepEqual(failedAssets, []);

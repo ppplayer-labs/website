@@ -141,7 +141,7 @@
         "mem": "4 GB RAM (Recomendado)"
       },
       "ios": {
-        "os": "iOS 13.0 o más reciente",
+        "os": "iOS 14.0 o más reciente",
         "arch": "ARM64",
         "mem": "2 GB RAM (Recomendado)"
       },
@@ -607,5 +607,24 @@
       "education": "Educación",
       "product": "Producto"
     }
+  },
+  "playbackUpdates": {
+    "local": "Las canciones importadas en iOS siguen disponibles al reabrir, con sus propias portadas.",
+    "output": "Elige AirPlay en iPhone o Mac. Cast y DLNA admiten contenido compatible.",
+    "queue": "Un botón dedicado a la cola y controles de vídeo adaptables.",
+    "pause": "La pausa desde la pantalla bloqueada o el Centro de control del iPhone se mantiene.",
+    "note": "iOS aún no está disponible públicamente. Las pruebas con Chromecast físico están pendientes.",
+    "localTitle": "Música local",
+    "outputTitle": "Reproducir en",
+    "queueTitle": "COLA",
+    "pauseTitle": "Pausar"
+  },
+  "common": {
+    "language": "Idioma",
+    "menu": "Más opciones",
+    "home": "Inicio",
+    "artist": "Artista",
+    "radio": "Estaciones de radio",
+    "player": "Pantalla completa"
   }
 }

@@ -141,7 +141,7 @@
         "mem": "4 GB RAM (권장)"
       },
       "ios": {
-        "os": "iOS 13.0 이상",
+        "os": "iOS 14.0 이상",
         "arch": "ARM64",
         "mem": "2 GB RAM (권장)"
       },
@@ -607,5 +607,24 @@
       "education": "교육",
       "product": "제품"
     }
+  },
+  "playbackUpdates": {
+    "local": "iOS에서 가져온 곡은 앱을 다시 열어도 각 곡의 표지와 함께 사용할 수 있습니다.",
+    "output": "iPhone이나 Mac에서 AirPlay를 선택하세요. Cast와 DLNA는 호환 미디어를 지원합니다.",
+    "queue": "전용 대기열 버튼과 화면 크기에 맞춰지는 동영상 컨트롤.",
+    "pause": "iPhone 잠금 화면이나 제어 센터에서 일시 정지하면 정지 상태가 유지됩니다.",
+    "note": "iOS 버전은 아직 공개되지 않았습니다. 실제 Chromecast 기기 테스트는 예정되어 있습니다.",
+    "localTitle": "로컬 음악",
+    "outputTitle": "재생 기기",
+    "queueTitle": "대기열",
+    "pauseTitle": "일시정지"
+  },
+  "common": {
+    "language": "언어",
+    "menu": "추가 옵션",
+    "home": "홈",
+    "artist": "아티스트",
+    "radio": "라디오 스테이션",
+    "player": "전체 화면"
   }
 }

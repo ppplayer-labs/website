@@ -141,7 +141,7 @@
         "mem": "4 GB RAM (Anbefalet)"
       },
       "ios": {
-        "os": "iOS 13.0 eller nyere",
+        "os": "iOS 14.0 eller nyere",
         "arch": "ARM64",
         "mem": "2 GB RAM (Anbefalet)"
       },
@@ -607,5 +607,24 @@
       "education": "Uddannelse",
       "product": "Produkt"
     }
+  },
+  "playbackUpdates": {
+    "local": "Importerede iOS-sange er stadig tilgængelige efter genåbning med deres egne omslag.",
+    "output": "Vælg AirPlay på iPhone eller Mac. Cast og DLNA understøtter kompatible medier.",
+    "queue": "En særskilt køknap og videokontroller, der tilpasser sig skærmen.",
+    "pause": "Pause fra iPhones låseskærm eller Kontrolcenter forbliver på pause.",
+    "note": "iOS er endnu ikke offentligt tilgængelig. Test med en fysisk Chromecast afventer.",
+    "localTitle": "Lokal musik",
+    "outputTitle": "Afspil på",
+    "queueTitle": "KØ",
+    "pauseTitle": "Pause"
+  },
+  "common": {
+    "language": "Sprog",
+    "menu": "Flere muligheder",
+    "home": "Hjem",
+    "artist": "Kunstner",
+    "radio": "Radiostationer",
+    "player": "Fuld skærm"
   }
 }

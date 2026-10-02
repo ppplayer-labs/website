@@ -139,7 +139,7 @@
         "mem": "4 GB RAM (Ojejeruréva)"
       },
       "ios": {
-        "os": "iOS 13.0 térã pyahuvéva",
+        "os": "iOS 14.0 térã pyahuvéva",
         "arch": "ARM64",
         "mem": "2 GB RAM (Ojejeruréva)"
       },
@@ -605,5 +605,24 @@
       "education": "Mbo'e",
       "product": "Mba'e"
     }
+  },
+  "playbackUpdates": {
+    "local": "iOS-pe remoingéva purahéi oĩ gueteri rembojurujeývo tembipuru, ijapére ta'anga reheve.",
+    "output": "Eiporavo AirPlay iPhone térã Mac-pe. Cast ha DLNA ombopu umi medio oñemoĩporãva hendive.",
+    "queue": "Peteĩ votõ tee tysýipe g̃uarã ha ta'ãngamýi ñangareko oñemohendáva pantalla rehe.",
+    "pause": "Remombytu'úramo iPhone pantalla ñemboty térã Control Center-gui, opyta pytu'úpe.",
+    "note": "iOS ndojeporukái gueteri opavavépe. Ne'ĩra oñeha'ã Chromecast tembipuru añeteguáre.",
+    "localTitle": "Mba'epu ñande mba'e",
+    "outputTitle": "Emboja ipype",
+    "queueTitle": "TYSÝI",
+    "pauseTitle": "Epytu’u"
+  },
+  "common": {
+    "language": "Ñe'ẽ",
+    "menu": "Ambuéva tembiapokáva",
+    "home": "Óga",
+    "artist": "Puraheihára",
+    "radio": "Ñe'ẽasãiha",
+    "player": "Tendyha tuichakue"
   }
 }

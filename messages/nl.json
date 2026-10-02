@@ -139,7 +139,7 @@
         "mem": "4 GB RAM (Aanbevolen)"
       },
       "ios": {
-        "os": "iOS 13.0 of nieuwer",
+        "os": "iOS 14.0 of nieuwer",
         "arch": "ARM64",
         "mem": "2 GB RAM (Aanbevolen)"
       },
@@ -605,5 +605,24 @@
       "education": "Onderwijs",
       "product": "Product​"
     }
+  },
+  "playbackUpdates": {
+    "local": "Geïmporteerde iOS-nummers blijven na het opnieuw openen beschikbaar, met hun eigen hoezen.",
+    "output": "Kies AirPlay op iPhone of Mac. Cast en DLNA ondersteunen compatibele media.",
+    "queue": "Een eigen wachtrijknop en videobediening die zich aan het scherm aanpast.",
+    "pause": "Pauze vanaf het iPhone-vergrendelscherm of Bedieningspaneel blijft behouden.",
+    "note": "iOS is nog niet openbaar beschikbaar. Tests met een fysieke Chromecast moeten nog plaatsvinden.",
+    "localTitle": "Lokale muziek",
+    "outputTitle": "Afspelen op",
+    "queueTitle": "WACHTRIJ",
+    "pauseTitle": "Pauzeren"
+  },
+  "common": {
+    "language": "Taal",
+    "menu": "Meer opties",
+    "home": "Home",
+    "artist": "Artiest",
+    "radio": "Radiostations",
+    "player": "Volledig scherm"
   }
 }

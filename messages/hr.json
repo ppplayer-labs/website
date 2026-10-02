@@ -139,7 +139,7 @@
         "mem": "4 GB RAM (Preporučeno)"
       },
       "ios": {
-        "os": "iOS 13.0 ili noviji",
+        "os": "iOS 14.0 ili noviji",
         "arch": "ARM64",
         "mem": "2 GB RAM (Preporučeno)"
       },
@@ -605,5 +605,24 @@
       "education": "Edukacija",
       "product": "Proizvod"
     }
+  },
+  "playbackUpdates": {
+    "local": "Pjesme uvezene u iOS ostaju dostupne nakon ponovnog otvaranja, s vlastitim omotima.",
+    "output": "Odaberite AirPlay na iPhoneu ili Macu. Cast i DLNA podržavaju kompatibilne medije.",
+    "queue": "Zaseban gumb reda i videokontrole prilagođene zaslonu.",
+    "pause": "Pauza sa zaključanog zaslona ili Kontrolnog centra iPhonea ostaje aktivna.",
+    "note": "iOS još nije javno dostupan. Testiranje na fizičkom Chromecastu još predstoji.",
+    "localTitle": "Lokalna glazba",
+    "outputTitle": "Reproduciraj na",
+    "queueTitle": "RED ČEKANJA",
+    "pauseTitle": "Pauza"
+  },
+  "common": {
+    "language": "Jezik",
+    "menu": "Više opcija",
+    "home": "Početna",
+    "artist": "Izvođač",
+    "radio": "Radiopostaje",
+    "player": "Cijeli zaslon"
   }
 }

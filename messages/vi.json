@@ -139,7 +139,7 @@
         "mem": "RAM 4 GB (Được khuyến nghị)"
       },
       "ios": {
-        "os": "iOS 13.0 hoặc mới hơn",
+        "os": "iOS 14.0 hoặc mới hơn",
         "arch": "ARM64",
         "mem": "RAM 2 GB (Được khuyến nghị)"
       },
@@ -605,5 +605,24 @@
       "education": "Giáo dục",
       "product": "Sản phẩm"
     }
+  },
+  "playbackUpdates": {
+    "local": "Bài hát nhập vào iOS vẫn có sẵn khi mở lại ứng dụng, với ảnh bìa riêng.",
+    "output": "Chọn AirPlay trên iPhone hoặc Mac. Cast và DLNA hỗ trợ nội dung tương thích.",
+    "queue": "Nút hàng đợi riêng và các nút điều khiển video thích ứng với màn hình.",
+    "pause": "Tạm dừng từ màn hình khóa hoặc Trung tâm điều khiển iPhone được giữ nguyên.",
+    "note": "iOS chưa được phát hành công khai. Việc thử nghiệm với Chromecast thật vẫn đang chờ.",
+    "localTitle": "Nhạc cục bộ",
+    "outputTitle": "Phát trên",
+    "queueTitle": "DANH SÁCH CHỜ",
+    "pauseTitle": "Tạm dừng"
+  },
+  "common": {
+    "language": "Ngôn ngữ",
+    "menu": "Tùy chọn khác",
+    "home": "Trang chủ",
+    "artist": "Nghệ sĩ",
+    "radio": "Đài phát thanh",
+    "player": "Toàn màn hình"
   }
 }

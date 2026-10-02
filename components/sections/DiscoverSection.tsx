@@ -6,6 +6,7 @@ import { SpotlightText } from '@/components/ui/SpotlightText'
 import { MacOSWindowFrame } from '@/components/ui/MacOSWindowFrame'
 
 export default function DiscoverSection() {
+  const common = useTranslations('common');
   const t = useTranslations('discover');
   return (
     <section id="features" className="py-32 md:py-48 bg-white text-black overflow-hidden">
@@ -36,7 +37,7 @@ export default function DiscoverSection() {
             <MacOSWindowFrame title="PPPlayer">
               <Image
                 src="/images/screenshot-discover.png"
-                alt="Discover UI Screenshot"
+                alt={common("home")}
                 width={1024}
                 height={576}
                 className="w-full h-auto"

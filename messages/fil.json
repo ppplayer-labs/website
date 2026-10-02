@@ -139,7 +139,7 @@
         "mem": "4 GB RAM (Inirerekomenda)"
       },
       "ios": {
-        "os": "iOS 13.0 o mas bago",
+        "os": "iOS 14.0 o mas bago",
         "arch": "ARM64",
         "mem": "2 GB RAM (Inirerekomenda)"
       },
@@ -605,5 +605,24 @@
       "education": "Edukasyon",
       "product": "Produkto"
     }
+  },
+  "playbackUpdates": {
+    "local": "Available pa rin ang mga kantang inangkat sa iOS kapag binuksan muli ang app, kasama ang sarili nilang mga pabalat.",
+    "output": "Piliin ang AirPlay sa iPhone o Mac. Sinusuportahan ng Cast at DLNA ang katugmang media.",
+    "queue": "Hiwalay na pindutan ng pila at mga kontrol ng video na umaangkop sa screen.",
+    "pause": "Nananatiling naka-pause ang pag-pause mula sa lock screen o Control Center ng iPhone.",
+    "note": "Hindi pa available sa publiko ang iOS. Nakabinbin pa ang pagsubok sa pisikal na Chromecast.",
+    "localTitle": "Lokal na Musika",
+    "outputTitle": "I-play sa",
+    "queueTitle": "PILA",
+    "pauseTitle": "I-pause"
+  },
+  "common": {
+    "language": "Wika",
+    "menu": "Higit pang mga pagpipilian",
+    "home": "Home",
+    "artist": "Artista",
+    "radio": "Mga Istasyon ng Radyo",
+    "player": "Buong screen"
   }
 }

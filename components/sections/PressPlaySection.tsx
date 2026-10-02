@@ -6,6 +6,7 @@ import { SpotlightText } from '@/components/ui/SpotlightText'
 import { MacOSWindowFrame } from '@/components/ui/MacOSWindowFrame'
 
 export default function PressPlaySection() {
+  const common = useTranslations('common');
   const t = useTranslations('pressPlay');
   return (
     <section className="py-24 md:py-32 bg-[var(--color-bg-base)] text-white overflow-hidden">
@@ -35,7 +36,7 @@ export default function PressPlaySection() {
             <MacOSWindowFrame title="PPPlayer">
               <Image
                 src="/images/screenshot-video.png"
-                alt="PPPlayer immersive player mode"
+                alt={common("player")}
                 width={1024}
                 height={576}
                 style={{ width: '100%', height: 'auto', display: 'block' }}

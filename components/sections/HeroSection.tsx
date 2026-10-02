@@ -10,6 +10,7 @@ import { MacOSWindowFrame } from '@/components/ui/MacOSWindowFrame'
 import { DownloadOptionsModal } from '@/components/ui/DownloadOptionsModal'
 
 export default function HeroSection() {
+  const common = useTranslations('common');
   const t = useTranslations('hero');
   const tCTA = useTranslations('downloadCTA');
   const [activeModalPlatform, setActiveModalPlatform] = useState<string | null>(null);
@@ -82,7 +83,7 @@ export default function HeroSection() {
             <MacOSWindowFrame title="PPPlayer">
               <Image
                 src="/images/screenshot-home.png"
-                alt="PPPlayer App Interface"
+                alt={common("home")}
                 width={1920}
                 height={1080}
                 style={{ width: '100%', height: 'auto', display: 'block' }}

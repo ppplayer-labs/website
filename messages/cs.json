@@ -141,7 +141,7 @@
         "mem": "4 GB RAM (Doporučeno)"
       },
       "ios": {
-        "os": "iOS 13.0 nebo novější",
+        "os": "iOS 14.0 nebo novější",
         "arch": "ARM64",
         "mem": "2 GB RAM (Doporučeno)"
       },
@@ -607,5 +607,24 @@
       "education": "Vzdělávání",
       "product": "Produkt"
     }
+  },
+  "playbackUpdates": {
+    "local": "Skladby importované v iOS zůstanou po opětovném otevření dostupné s vlastními obaly.",
+    "output": "Vyberte AirPlay na iPhonu nebo Macu. Cast a DLNA podporují kompatibilní média.",
+    "queue": "Samostatné tlačítko fronty a ovládání videa přizpůsobené obrazovce.",
+    "pause": "Pozastavení z uzamčené obrazovky nebo Ovládacího centra iPhonu zůstává zachováno.",
+    "note": "iOS zatím není veřejně dostupný. Testování na fyzickém Chromecastu je stále před námi.",
+    "localTitle": "Místní hudba",
+    "outputTitle": "Přehrávat na",
+    "queueTitle": "FRONTA",
+    "pauseTitle": "Pozastavit"
+  },
+  "common": {
+    "language": "Jazyk",
+    "menu": "Další možnosti",
+    "home": "Domů",
+    "artist": "Umělec",
+    "radio": "Rádiové stanice",
+    "player": "Celá obrazovka"
   }
 }

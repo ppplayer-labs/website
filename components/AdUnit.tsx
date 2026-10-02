@@ -52,7 +52,7 @@ export default function AdUnit({
     return null; // Safely disabled if not configured
   }
 
-  const adLabel = t.has('advertisements') ? t('advertisements') : 'Advertisements';
+  const adLabel = t('advertisements');
 
   // Development placeholder
   if (isDevelopment) {

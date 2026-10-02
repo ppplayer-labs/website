@@ -139,7 +139,7 @@
         "mem": "4 GB RAM (Recomandat)"
       },
       "ios": {
-        "os": "iOS 13.0 sau mai nou",
+        "os": "iOS 14.0 sau mai nou",
         "arch": "ARM64",
         "mem": "2 GB RAM (Recomandat)"
       },
@@ -605,5 +605,24 @@
       "education": "Educație",
       "product": "Produs"
     }
+  },
+  "playbackUpdates": {
+    "local": "Melodiile importate în iOS rămân disponibile la redeschidere, cu propriile coperți.",
+    "output": "Alege AirPlay pe iPhone sau Mac. Cast și DLNA acceptă conținut compatibil.",
+    "queue": "Un buton dedicat cozii și comenzi video adaptate ecranului.",
+    "pause": "Pauza de pe ecranul blocat sau din Centrul de control al iPhone-ului se păstrează.",
+    "note": "iOS nu este încă disponibil public. Testele cu un Chromecast fizic sunt în așteptare.",
+    "localTitle": "Muzică locală",
+    "outputTitle": "Redă pe",
+    "queueTitle": "COADĂ",
+    "pauseTitle": "Pauză"
+  },
+  "common": {
+    "language": "Limbă",
+    "menu": "Mai multe opțiuni",
+    "home": "Acasă",
+    "artist": "Artist",
+    "radio": "Posturi de radio",
+    "player": "Ecran complet"
   }
 }

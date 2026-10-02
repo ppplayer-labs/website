@@ -141,7 +141,7 @@
         "mem": "4 GB RAM (Ieteicams)"
       },
       "ios": {
-        "os": "iOS 13.0 vai jaunāka",
+        "os": "iOS 14.0 vai jaunāka",
         "arch": "ARM64",
         "mem": "2 GB RAM (Ieteicams)"
       },
@@ -607,5 +607,24 @@
       "education": "Izglītība",
       "product": "Produkts"
     }
+  },
+  "playbackUpdates": {
+    "local": "iOS importētās dziesmas pēc lietotnes atkārtotas atvēršanas ir pieejamas ar saviem vāka attēliem.",
+    "output": "Izvēlieties AirPlay iPhone vai Mac ierīcē. Cast un DLNA atbalsta saderīgu multividi.",
+    "queue": "Atsevišķa rindas poga un ekrānam pielāgota video vadība.",
+    "pause": "Pauze no iPhone bloķēšanas ekrāna vai Vadības centra paliek spēkā.",
+    "note": "iOS vēl nav publiski pieejams. Testēšana ar fizisku Chromecast vēl nav veikta.",
+    "localTitle": "Vietējā mūzika",
+    "outputTitle": "Atskaņot ierīcē",
+    "queueTitle": "RINDA",
+    "pauseTitle": "Pauze"
+  },
+  "common": {
+    "language": "Valoda",
+    "menu": "Vairāk iespēju",
+    "home": "Sākums",
+    "artist": "Mākslinieks",
+    "radio": "Radiostacijas",
+    "player": "Pilnekrāns"
   }
 }

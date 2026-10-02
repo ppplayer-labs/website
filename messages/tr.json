@@ -126,29 +126,29 @@
     "reqTitle": "{platform} Gereksinimleri",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina or newer",
+        "os": "macOS 10.15 Catalina veya daha yeni",
         "arch": "Apple Silicon ve Intel (Evrensel)",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (önerilen)"
       },
       "windows": {
-        "os": "Windows 10 or later (64-bit)",
+        "os": "Windows 10 veya üzeri (64 bit)",
         "arch": "x64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (önerilen)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 or newer (Experimental)",
+        "os": "Ubuntu 20.04 veya daha yeni (deneysel)",
         "arch": "x86_64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (önerilen)"
       },
       "ios": {
-        "os": "iOS 13.0 or newer",
+        "os": "iOS 14.0 veya daha yeni",
         "arch": "ARM64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (önerilen)"
       },
       "android": {
-        "os": "Android 7.0 (API 24) or newer",
+        "os": "Android 7.0 (API 24) veya daha yeni",
         "arch": "ARM64 / ARM / x86_64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (önerilen)"
       }
     }
   },
@@ -607,5 +607,24 @@
       "education": "Eğitim",
       "product": "Ürün"
     }
+  },
+  "playbackUpdates": {
+    "local": "iOS’a aktarılan şarkılar, uygulama yeniden açıldığında kendi kapaklarıyla kullanılabilir.",
+    "output": "iPhone veya Mac’te AirPlay’i seçin. Cast ve DLNA uyumlu medyayı destekler.",
+    "queue": "Ayrı bir sıra düğmesi ve ekrana uyum sağlayan video kontrolleri.",
+    "pause": "iPhone kilit ekranından veya Denetim Merkezi’nden duraklatma korunur.",
+    "note": "iOS sürümü henüz herkese açık değil. Fiziksel Chromecast testi bekliyor.",
+    "localTitle": "Yerel Müzik",
+    "outputTitle": "Şurada çal",
+    "queueTitle": "KUYRUK",
+    "pauseTitle": "Duraklat"
+  },
+  "common": {
+    "language": "Dil",
+    "menu": "Daha fazla seçenek",
+    "home": "Ana Sayfa",
+    "artist": "Sanatçı",
+    "radio": "Radyo İstasyonları",
+    "player": "Tam ekran"
   }
 }

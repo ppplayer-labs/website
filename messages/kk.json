@@ -124,29 +124,29 @@
     "reqTitle": "{platform} жүйелік талаптары",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina or newer",
+        "os": "macOS 10.15 Catalina немесе жаңарақ",
         "arch": "Apple Silicon және Intel (Универсал)",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (ұсынылады)"
       },
       "windows": {
-        "os": "Windows 10 or later (64-bit)",
+        "os": "Windows 10 немесе кейінгі нұсқа (64 бит)",
         "arch": "x64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (ұсынылады)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 or newer (Experimental)",
+        "os": "Ubuntu 20.04 немесе жаңарақ (эксперименттік)",
         "arch": "x86_64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (ұсынылады)"
       },
       "ios": {
-        "os": "iOS 13.0 or newer",
+        "os": "iOS 14.0 немесе жаңарақ",
         "arch": "ARM64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (ұсынылады)"
       },
       "android": {
-        "os": "Android 7.0 (API 24) or newer",
+        "os": "Android 7.0 (API 24) немесе жаңарақ",
         "arch": "ARM64 / ARM / x86_64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (ұсынылады)"
       }
     }
   },
@@ -605,5 +605,24 @@
       "education": "Білім",
       "product": "Өнім"
     }
+  },
+  "playbackUpdates": {
+    "local": "iOS жүйесіне импортталған әндер қолданбаны қайта ашқанда өз мұқабаларымен қолжетімді болады.",
+    "output": "iPhone немесе Mac құрылғысында AirPlay таңдаңыз. Cast пен DLNA үйлесімді медианы қолдайды.",
+    "queue": "Кезекке арналған бөлек түйме және экранға бейімделетін бейне басқару элементтері.",
+    "pause": "iPhone құлыптау экранынан немесе Басқару орталығынан тоқтатылған ойнату тоқтатылған күйде қалады.",
+    "note": "iOS нұсқасы әлі көпшілікке қолжетімді емес. Нақты Chromecast құрылғысында сынақ әлі өткізілген жоқ.",
+    "localTitle": "Жергілікті музыка",
+    "outputTitle": "Осы құрылғыда ойнату",
+    "queueTitle": "КЕЗЕК",
+    "pauseTitle": "Кідірту"
+  },
+  "common": {
+    "language": "Тіл",
+    "menu": "Қосымша опциялар",
+    "home": "Басты бет",
+    "artist": "Әртіс",
+    "radio": "Радиостанциялар",
+    "player": "Толық экран"
   }
 }

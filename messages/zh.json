@@ -126,29 +126,29 @@
     "reqTitle": "{platform} 系统要求",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina or newer",
+        "os": "macOS 10.15 Catalina或更高版本",
         "arch": "苹果硅与英特尔（通用）",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM（推荐）"
       },
       "windows": {
-        "os": "Windows 10 or later (64-bit)",
+        "os": "Windows 10或更高版本（64位）",
         "arch": "x64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM（推荐）"
       },
       "linux": {
-        "os": "Ubuntu 20.04 or newer (Experimental)",
+        "os": "Ubuntu 20.04或更高版本（实验性）",
         "arch": "x86_64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM（推荐）"
       },
       "ios": {
-        "os": "iOS 13.0 or newer",
+        "os": "iOS 14.0或更高版本",
         "arch": "ARM64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM（推荐）"
       },
       "android": {
-        "os": "Android 7.0 (API 24) or newer",
+        "os": "Android 7.0（API 24）或更高版本",
         "arch": "ARM64 / ARM / x86_64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM（推荐）"
       }
     }
   },
@@ -607,5 +607,24 @@
       "education": "教育",
       "product": "产品"
     }
+  },
+  "playbackUpdates": {
+    "local": "导入的iOS歌曲在重新打开应用后仍然可用，并保留各自的封面。",
+    "output": "在iPhone或Mac上选择AirPlay。Cast和DLNA支持兼容的媒体。",
+    "queue": "独立的播放队列按钮和适应屏幕尺寸的视频控件。",
+    "pause": "从iPhone锁定屏幕或控制中心暂停后，播放会保持暂停。",
+    "note": "iOS版本尚未公开发布。实体Chromecast设备测试仍待进行。",
+    "localTitle": "本地音乐",
+    "outputTitle": "播放设备",
+    "queueTitle": "队列",
+    "pauseTitle": "暂停"
+  },
+  "common": {
+    "language": "语言",
+    "menu": "更多选项",
+    "home": "首页",
+    "artist": "艺术家",
+    "radio": "广播电台",
+    "player": "全屏"
   }
 }

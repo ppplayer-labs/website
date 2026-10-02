@@ -111,7 +111,7 @@ export default function PlatformCardsSection() {
                       handleDownloadClick(platform.id);
                     }}
                     className="absolute inset-0 z-0 cursor-pointer"
-                    aria-label={`Download options for ${platform.name}`}
+                    aria-label={tCTA("downloadFor", {platform: platform.name})}
                   />
                   
                   <div className={`absolute top-0 inset-x-0 h-32 bg-gradient-to-b ${platform.gradient} opacity-50 pointer-events-none`} />

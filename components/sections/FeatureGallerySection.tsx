@@ -33,8 +33,8 @@ export default function FeatureGallerySection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <MacOSWindowFrame title="Search">
-              <Image src="/images/screenshot-search-albums.png" alt="Search" width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
+            <MacOSWindowFrame title={t("searchTitle")}>
+              <Image src="/images/screenshot-search-albums.png" alt={t("searchTitle")} width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
             </MacOSWindowFrame>
             <h3 className="text-3xl font-bold mt-8 tracking-tight">{t("searchTitle")}</h3>
             <p className="mt-3 text-lg text-slate-400">{t("searchDesc")}</p>
@@ -47,8 +47,8 @@ export default function FeatureGallerySection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
           >
-            <MacOSWindowFrame title="Queue">
-              <Image src="/images/screenshot-queue.png" alt="Queue" width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
+            <MacOSWindowFrame title={t("queueTitle")}>
+              <Image src="/images/screenshot-queue.png" alt={t("queueTitle")} width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
             </MacOSWindowFrame>
             <h3 className="text-3xl font-bold mt-8 tracking-tight">{t("queueTitle")}</h3>
             <p className="mt-3 text-lg text-slate-400">{t("queueDesc")}</p>
@@ -61,8 +61,8 @@ export default function FeatureGallerySection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
           >
-            <MacOSWindowFrame title="Favorites">
-              <Image src="/images/screenshot-favorites.png" alt="Favorites" width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
+            <MacOSWindowFrame title={t("favTitle")}>
+              <Image src="/images/screenshot-favorites.png" alt={t("favTitle")} width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
             </MacOSWindowFrame>
             <h3 className="text-3xl font-bold mt-8 tracking-tight">{t("favTitle")}</h3>
             <p className="mt-3 text-lg text-slate-400">{t("favDesc")}</p>
@@ -75,8 +75,8 @@ export default function FeatureGallerySection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
           >
-            <MacOSWindowFrame title="Native Context">
-              <Image src="/images/screenshot-context-menu.png" alt="Context Menu" width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
+            <MacOSWindowFrame title={t("contextTitle")}>
+              <Image src="/images/screenshot-context-menu.png" alt={t("contextTitle")} width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
             </MacOSWindowFrame>
             <h3 className="text-3xl font-bold mt-8 tracking-tight">{t("contextTitle")}</h3>
             <p className="mt-3 text-lg text-slate-400">{t("contextDesc")}</p>
@@ -89,8 +89,8 @@ export default function FeatureGallerySection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
           >
-            <MacOSWindowFrame title="Video Playback">
-              <Image src="/images/screenshot-video.png" alt="Video Playback" width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
+            <MacOSWindowFrame title={t("videoTitle")}>
+              <Image src="/images/screenshot-video.png" alt={t("videoTitle")} width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
             </MacOSWindowFrame>
             <h3 className="text-3xl font-bold mt-8 tracking-tight">{t("videoTitle")}</h3>
             <p className="mt-3 text-lg text-slate-400">{t("videoDesc")}</p>
@@ -103,8 +103,8 @@ export default function FeatureGallerySection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
           >
-            <MacOSWindowFrame title="Network Streams">
-              <Image src="/images/screenshot-streams.png" alt="Network Streams" width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
+            <MacOSWindowFrame title={t("streamsTitle")}>
+              <Image src="/images/screenshot-streams.png" alt={t("streamsTitle")} width={1024} height={576} className="w-full h-auto" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 50vw" />
             </MacOSWindowFrame>
             <h3 className="text-3xl font-bold mt-8 tracking-tight">{t("streamsTitle")}</h3>
             <p className="mt-3 text-lg text-slate-400">{t("streamsDesc")}</p>

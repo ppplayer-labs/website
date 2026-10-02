@@ -14,12 +14,14 @@ import { LanguageSelector } from '@/components/ui/LanguageSelector'
 const navLinks = [
   { label: 'features', href: '/#features', isRaw: false },
   { label: 'blog', href: '/blog', isRaw: false },
-  { label: 'Changelog', href: '/changelog', isRaw: true },
+  { label: 'changelog', href: '/changelog', isRaw: true },
   { label: 'support', href: '/support', isRaw: false }
 ]
 
 export default function Navbar() {
   const t = useTranslations('nav');
+  const common = useTranslations('common');
+  const footer = useTranslations('footer');
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -50,7 +52,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2.5 group">
             <SpotlightLogo
               src="/logo.png"
-              alt="PPPlayer Logo"
+              alt=""
               width={28}
               height={28}
               className="rounded-lg group-hover:scale-105 transition-transform duration-300"
@@ -72,7 +74,7 @@ export default function Navbar() {
                     href={link.href.substring(1)}
                     className="text-slate-400 hover:text-white transition-colors text-sm font-medium"
                   >
-                    {link.isRaw ? link.label : t(link.label)}
+                    {link.isRaw ? footer(link.label) : t(link.label)}
                   </a>
                 );
               }
@@ -82,7 +84,7 @@ export default function Navbar() {
                   href={link.href}
                   className="text-slate-400 hover:text-white transition-colors text-sm font-medium"
                 >
-                  {link.isRaw ? link.label : t(link.label)}
+                  {link.isRaw ? footer(link.label) : t(link.label)}
                 </Link>
               );
             })}
@@ -117,7 +119,7 @@ export default function Navbar() {
             <button
               className="p-2 text-slate-400 hover:text-white transition-colors"
               onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
+              aria-label={common('menu')} aria-expanded={isOpen}
             >
               {isOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -146,7 +148,7 @@ export default function Navbar() {
                         className="text-slate-300 hover:text-white text-lg font-medium transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
-                        {link.isRaw ? link.label : t(link.label)}
+                        {link.isRaw ? footer(link.label) : t(link.label)}
                       </a>
                     );
                   }
@@ -157,7 +159,7 @@ export default function Navbar() {
                       className="text-slate-300 hover:text-white text-lg font-medium transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
-                      {link.isRaw ? link.label : t(link.label)}
+                      {link.isRaw ? footer(link.label) : t(link.label)}
                     </Link>
                   );
                 })}

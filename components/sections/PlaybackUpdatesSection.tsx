@@ -1,6 +1,6 @@
 import { Airplay, ListMusic, Music2, Smartphone } from 'lucide-react';
 import { Link } from '@/i18n/routing';
-import { getPlaybackUpdates } from '@/lib/playback-updates';
+import { useTranslations } from 'next-intl';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { SpotlightText } from '@/components/ui/SpotlightText';
 import { SpotlightCard } from '@/components/ui/SpotlightCard';
@@ -8,9 +8,19 @@ import { SpotlightCard } from '@/components/ui/SpotlightCard';
 const icons = [Music2, Airplay, ListMusic, Smartphone];
 
 export default function PlaybackUpdatesSection({ locale, compact = false }: { locale: string; compact?: boolean }) {
-  const content = getPlaybackUpdates(locale);
+  const t = useTranslations('playbackUpdates');
+  const shared = useTranslations();
+  const content = {
+    badge: shared('downloadCTA.comingSoon'),
+    title: shared('platforms.title'),
+    description: shared('changelog.subtitle'),
+    items: ['local', 'output', 'queue', 'pause'].map(key => ({ title: t(`${key}Title`), description: t(key) })),
+    note: t('note'),
+    guide: shared('blog.readMore'),
+    changelog: shared('footer.changelog'),
+  };
   return (
-    <section id="playback-updates" lang={content.lang} dir="ltr" aria-labelledby="playback-updates-title" className={compact ? 'mb-20 overflow-hidden' : 'py-20 md:py-28 border-y border-white/10 overflow-hidden bg-[var(--color-bg-base)]'}>
+    <section id="playback-updates" lang={locale} aria-labelledby="playback-updates-title" className={compact ? 'mb-20 overflow-hidden' : 'py-20 md:py-28 border-y border-white/10 overflow-hidden bg-[var(--color-bg-base)]'}>
       <div className={compact ? '' : 'max-w-7xl mx-auto px-4 sm:px-6'}>
         <FadeIn
           initial={{ opacity: 0, y: 20 }}

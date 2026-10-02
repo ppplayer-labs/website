@@ -124,29 +124,29 @@
     "reqTitle": "Wetin your {platform} need",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina or newer",
+        "os": "macOS 10.15 Catalina or newer version",
         "arch": "Apple Silicon & Intel (Universal)​",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (wey we recommend)"
       },
       "windows": {
-        "os": "Windows 10 or later (64-bit)",
+        "os": "Windows 10 or newer version (64-bit)",
         "arch": "x64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (wey we recommend)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 or newer (Experimental)",
+        "os": "Ubuntu 20.04 or newer version (na trial)",
         "arch": "x86_64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (wey we recommend)"
       },
       "ios": {
-        "os": "iOS 13.0 or newer",
+        "os": "iOS 14.0 or newer version",
         "arch": "ARM64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (wey we recommend)"
       },
       "android": {
-        "os": "Android 7.0 (API 24) or newer",
+        "os": "Android 7.0 (API 24) or newer version",
         "arch": "ARM64 / ARM / x86_64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (wey we recommend)"
       }
     }
   },
@@ -605,5 +605,24 @@
       "education": "Education​",
       "product": "Product​"
     }
+  },
+  "playbackUpdates": {
+    "local": "Songs wey you import for iOS still dey when you open app again, with their own cover pictures.",
+    "output": "Choose AirPlay for iPhone or Mac. Cast and DLNA fit play media wey dem support.",
+    "queue": "Queue get im own button, and video controls fit the screen.",
+    "pause": "If you pause from iPhone lock screen or Control Center, the song go remain paused.",
+    "note": "iOS never dey available for everybody. We never test with physical Chromecast yet.",
+    "localTitle": "Local Music",
+    "outputTitle": "Play for",
+    "queueTitle": "Queue",
+    "pauseTitle": "Pause am"
+  },
+  "common": {
+    "language": "Language",
+    "menu": "More options",
+    "home": "House",
+    "artist": "Artis",
+    "radio": "Radio Stations",
+    "player": "Full screen"
   }
 }

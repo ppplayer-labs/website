@@ -124,29 +124,29 @@
     "reqTitle": "{platform} এর প্রয়োজনীয়তা",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina or newer",
+        "os": "macOS 10.15 Catalina বা পরবর্তী সংস্করণ",
         "arch": "অ্যাপল সিলিকন ও ইন্টেল (ইউনিভার্সাল)",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (প্রস্তাবিত)"
       },
       "windows": {
-        "os": "Windows 10 or later (64-bit)",
+        "os": "Windows 10 বা পরবর্তী সংস্করণ (৬৪-বিট)",
         "arch": "x64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (প্রস্তাবিত)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 or newer (Experimental)",
+        "os": "Ubuntu 20.04 বা পরবর্তী সংস্করণ (পরীক্ষামূলক)",
         "arch": "x86_64",
-        "mem": "4 GB RAM (Recommended)"
+        "mem": "4 GB RAM (প্রস্তাবিত)"
       },
       "ios": {
-        "os": "iOS 13.0 or newer",
+        "os": "iOS 14.0 বা পরবর্তী সংস্করণ",
         "arch": "ARM64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (প্রস্তাবিত)"
       },
       "android": {
-        "os": "Android 7.0 (API 24) or newer",
+        "os": "Android 7.0 (API 24) বা পরবর্তী সংস্করণ",
         "arch": "ARM64 / ARM / x86_64",
-        "mem": "2 GB RAM (Recommended)"
+        "mem": "2 GB RAM (প্রস্তাবিত)"
       }
     }
   },
@@ -605,5 +605,24 @@
       "education": "শিক্ষা",
       "product": "পণ্য"
     }
+  },
+  "playbackUpdates": {
+    "local": "iOS-এ আমদানি করা গান অ্যাপ আবার খুললেও নিজস্ব প্রচ্ছদসহ পাওয়া যায়।",
+    "output": "iPhone বা Mac-এ AirPlay বেছে নিন। Cast ও DLNA সামঞ্জস্যপূর্ণ মিডিয়া সমর্থন করে।",
+    "queue": "সারির জন্য আলাদা বোতাম এবং পর্দার আকার অনুযায়ী ভিডিও নিয়ন্ত্রণ।",
+    "pause": "iPhone-এর লক স্ক্রিন বা কন্ট্রোল সেন্টার থেকে বিরতি দিলে তা বজায় থাকে।",
+    "note": "iOS এখনো সর্বসাধারণের জন্য উপলব্ধ নয়। আসল Chromecast-এ পরীক্ষা বাকি আছে।",
+    "localTitle": "স্থানীয় সঙ্গীত",
+    "outputTitle": "এতে চালান",
+    "queueTitle": "সারি",
+    "pauseTitle": "বিরতি"
+  },
+  "common": {
+    "language": "ভাষা",
+    "menu": "আরও বিকল্প",
+    "home": "হোম",
+    "artist": "শিল্পী",
+    "radio": "রেডিও স্টেশন",
+    "player": "পূর্ণ পর্দা"
   }
 }

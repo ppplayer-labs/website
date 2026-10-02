@@ -20,7 +20,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 group w-fit">
               <SpotlightLogo
                 src="/logo.png"
-                alt="PPPlayer Logo"
+                alt=""
                 width={32}
                 height={32}
                 className="opacity-75 group-hover:opacity-100 transition-opacity duration-300"
@@ -94,7 +94,7 @@ export default function Footer() {
               href="https://www.instagram.com/ppplayermusic/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="PPPlayer on Instagram"
+              aria-label="PPPlayer · Instagram"
               className="p-2.5 rounded-full text-slate-400 hover:bg-white/5 hover:text-white hover:scale-110 transition-all duration-300"
             >
               {/* Instagram */}
@@ -108,7 +108,7 @@ export default function Footer() {
               href="https://www.linkedin.com/company/ppplayer/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="PPPlayer on LinkedIn"
+              aria-label="PPPlayer · LinkedIn"
               className="p-2.5 rounded-full text-slate-400 hover:bg-white/5 hover:text-white hover:scale-110 transition-all duration-300"
             >
               {/* LinkedIn */}
@@ -122,7 +122,7 @@ export default function Footer() {
               href="https://www.facebook.com/ppplayermusic"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="PPPlayer on Facebook"
+              aria-label="PPPlayer · Facebook"
               className="p-2.5 rounded-full text-slate-400 hover:bg-white/5 hover:text-white hover:scale-110 transition-all duration-300"
             >
               {/* Facebook */}
@@ -134,7 +134,7 @@ export default function Footer() {
               href="https://github.com/ppplayer-labs"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="PPPlayer on GitHub"
+              aria-label="PPPlayer · GitHub"
               className="p-2.5 rounded-full text-slate-400 hover:bg-white/5 hover:text-white hover:scale-110 transition-all duration-300"
             >
               {/* GitHub */}
