@@ -28,7 +28,7 @@ Para voltar ao iPhone, toque em **Este dispositivo** e selecione o iPhone no sel
 
 ### AirPlay, Cast e DLNA têm requisitos diferentes
 
-- **AirPlay:** usa o seletor de áudio do sistema no iPhone. O novo seletor dentro do app é para iOS; no macOS, a rota de áudio continua sendo escolhida pelos controles do sistema.
+- **AirPlay:** usa o seletor de áudio do sistema no iPhone. No Mac, **Reproduzir em → AirPlay & audio output** abre os ajustes de som e mostra a saída atual do sistema. Escolha o receptor nos ajustes; mudar a saída padrão também pode afetar outros apps. O seletor do iPhone não é reutilizado no macOS.
 - **Google Cast:** implementado para Android e iOS. O acesso aos arquivos locais e a transferência têm testes automatizados com um receptor simulado; os testes com um Chromecast físico ainda estão pendentes. O caminho de transferência por URL de mídia não aceita a reprodução do YouTube.
 - **DLNA/UPnP:** exige um receptor acessível na rede local e um formato que ele consiga reproduzir. No iOS, a descoberta também exige aprovação de multicast da Apple e uma configuração de compilação habilitada. A validação com um receptor DLNA físico ainda está pendente.
 

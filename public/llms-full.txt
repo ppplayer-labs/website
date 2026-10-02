@@ -21,7 +21,7 @@ PPPlayer is a free, cross-platform, open-source media player designed for discov
 These features are in development and do not imply inclusion in current public downloads or public iOS availability.
 
 - **Durable iOS music imports**: New imports are managed copies that remain available after reopening. Old entries pointing to deleted temporary files require reimporting the originals.
-- **Play On**: In-app iOS AirPlay picker with active receiver name and selection. macOS audio routing uses system controls. AirPlay uses the local engine and Apple routing, not LocalMediaServer.
+- **Play On**: In-app iOS AirPlay picker with active receiver name and selection. On macOS, Play On opens Sound settings and displays the system default output name and route changes via Core Audio. The macOS shortcut changes system routing, not an app-only receiver session. AirPlay uses the local engine and Apple routing, not LocalMediaServer.
 - **Network outputs**: Cast backends exist for Android/iOS; DLNA depends on platform capabilities. iOS DLNA discovery requires approved multicast capability and an enabled build configuration. YouTube is not supported through the Cast/DLNA media-URL handoff.
 - **Local file serving**: Apple security-scoped bookmarks resolve at file acquisition, and authorized file leases remain active while accepted HTTP reads finish. Cast/DLNA receivers must support the source format; PPPlayer does not transcode.
 - **Player layout**: Dedicated Queue button, responsive video controls and secondary options menu. Local audio displays its own artwork or fallback instead of stale video thumbnails.
@@ -47,4 +47,3 @@ English (`en`), Arabic (`ar`), Bengali (`bn`), Czech (`cs`), Danish (`da`), Dutc
 The application generates and supports all **38 corresponding languages** at runtime:
 - **Selectable in App Settings (38 languages)**: Users can manually select any of the 38 languages (plus "System Default") from the settings menu. 
 - **Parity Note**: The app uses `pt` for Brazilian Portuguese, corresponding to the website's `pt-BR`.
-

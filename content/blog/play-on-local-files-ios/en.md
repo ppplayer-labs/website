@@ -28,7 +28,7 @@ To move audio back to the iPhone, tap **This device** and select the iPhone in A
 
 ### AirPlay, Cast, and DLNA have different requirements
 
-- **AirPlay:** uses Apple’s system routing UI on iPhone. The new in-app picker is for iOS; macOS audio routing continues through system controls.
+- **AirPlay:** uses Apple’s system routing UI on iPhone. On Mac, **Play On → AirPlay & audio output** opens Sound settings and displays the system's current output. Choose your receiver there; changing the system default can also affect other apps. The iPhone picker is not reused on macOS.
 - **Google Cast:** implemented for Android and iOS. Local-file acquisition and handoff have automated coverage with a simulated receiver; physical Chromecast testing is still pending. YouTube playback cannot be handed off through this media-URL path.
 - **DLNA/UPnP:** requires a receiver on a reachable local network and a format that it can play. On iOS, discovery additionally requires Apple multicast approval and an enabled build configuration. Physical DLNA validation is still pending.
 
