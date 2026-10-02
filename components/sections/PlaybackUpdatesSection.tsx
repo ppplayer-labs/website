@@ -3,6 +3,7 @@ import { Link } from '@/i18n/routing';
 import { getPlaybackUpdates } from '@/lib/playback-updates';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { SpotlightText } from '@/components/ui/SpotlightText';
+import { SpotlightCard } from '@/components/ui/SpotlightCard';
 
 const icons = [Music2, Airplay, ListMusic, Smartphone];
 
@@ -34,14 +35,13 @@ export default function PlaybackUpdatesSection({ locale, compact = false }: { lo
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: index * 0.1 }}
-                className="group relative rounded-3xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 min-w-0 hover:bg-white/[0.04] transition-all duration-300 hover:border-white/20 hover:-translate-y-1 shadow-lg shadow-black/20"
+                className="group relative h-full min-w-0"
               >
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/[0.05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                <div className="relative">
+                <SpotlightCard className="h-full p-6 sm:p-8 hover:-translate-y-1 transition-transform duration-300" spotlightColor="rgba(248, 113, 113, 0.1)">
                   <Icon aria-hidden="true" className="w-8 h-8 text-red-400 mb-6 group-hover:text-red-300 transition-colors" />
-                  <h3 className="text-xl font-bold tracking-tight text-white">{item.title}</h3>
-                  <p className="text-sm sm:text-base leading-relaxed text-slate-400 mt-3 group-hover:text-slate-300 transition-colors">{item.description}</p>
-                </div>
+                  <h3 className="text-xl font-bold tracking-tight text-white relative z-10">{item.title}</h3>
+                  <p className="text-sm sm:text-base leading-relaxed text-slate-400 mt-3 group-hover:text-slate-300 transition-colors relative z-10">{item.description}</p>
+                </SpotlightCard>
               </FadeIn>
             );
           })}
