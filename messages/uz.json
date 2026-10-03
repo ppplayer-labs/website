@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "homeTitle": "PPPlayer | Bepul va ochiq manbali musiqa pleyeri",
-    "homeDesc": "Bepul, ochiq manbali musiqa pleyeri. Hisob yo'q. Obuna yo'q. Shunchaki tinglang.",
+    "homeTitle": "PPPlayer | Bepul va ochiq manbali media pleeri",
+    "homeDesc": "Bepul, ochiq manbali media pleeri. Hisob yo'q. Obuna yo'q. Shunchaki tinglang.",
     "downloadTitle": "PPPlayer-ni bepul yuklab oling",
-    "downloadDesc": "Bepul, ochiq manbali musiqa pleyeri. Hisob yo'q. Obuna yo'q. Shunchaki tinglang.",
+    "downloadDesc": "Bepul, ochiq manbali media pleeri. Hisob yo'q. Obuna yo'q. Shunchaki tinglang.",
     "privacyTitle": "Maxfiylik siyosati",
     "privacyDesc": "PPPlayer uchun maxfiylik siyosati: macOS, Linux, Windows, iOS va Android uchun bepul musiqa ilovasi.",
     "termsTitle": "Foydalanish shartlari",
@@ -21,7 +21,7 @@
     "blog": "Blog​"
   },
   "footer": {
-    "desc": "Bepul, ochiq manbali musiqa pleyeri. Hisob yo'q. Obuna yo'q. Shunchaki tinglang.",
+    "desc": "Bepul, ochiq manbali media pleeri. Hisob yo'q. Obuna yo'q. Shunchaki tinglang.",
     "product": "Mahsulot",
     "features": "Xususiyatlar",
     "download": "Yuklab olish",
@@ -53,7 +53,7 @@
   "hero": {
     "title1": "Musiqa.",
     "title2": "To'siqlarsiz.",
-    "desc": "Bepul, ochiq manbali musiqa pleyeri. Hisob yo'q. Obuna yo'q. Shunchaki tinglang.",
+    "desc": "Bepul, ochiq manbali media pleeri. Hisob yo'q. Obuna yo'q. Shunchaki tinglang.",
     "getIos": "iOS (TestFlight)​",
     "getAndroid": "Android uchun yuklab olish",
     "getMac": "Mac uchun yuklab olish",
@@ -573,7 +573,7 @@
     "contactTitle": "Biz bilan bog'laning",
     "contactDesc": "Umumiy so'rovlar, hamkorlik yoki GitHub-ga mos kelmaydigan savollar uchun contact@ppplayer.com manziliga murojaat qiling.",
     "githubTitle": "Hamjamiyat va GitHub",
-    "githubDesc": "Kodni o'rganing, xato haqida xabar bering, xususiyatni taklif qiling yoki kod va tarjimalarga hissa qo'shing. Ochiq manbali eng yaxshi musiqa pleyerini yaratishda bizga qo'shiling.",
+    "githubDesc": "Kodni o'rganing, xato haqida xabar bering, xususiyatni taklif qiling yoki kod va tarjimalarga hissa qo'shing. Ochiq manbali eng yaxshi media pleerini yaratishda bizga qo'shiling.",
     "githubBtn": "GitHub-da ko'rish"
   },
   "openSource": {

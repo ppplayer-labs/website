@@ -1,9 +1,9 @@
 {
   "metadata": {
     "homeTitle": "PPPlayer | Reprodutor de Música Gratuito e de Código Aberto",
-    "homeDesc": "Um player de música gratuito e de código aberto. Sem conta. Sem assinatura. É só dar play.",
+    "homeDesc": "Um player de mídia gratuito e de código aberto. Sem conta. Sem assinatura. É só dar play.",
     "downloadTitle": "Baixe o PPPlayer Grátis",
-    "downloadDesc": "Um player de música gratuito e de código aberto. Sem conta. Sem assinatura. É só dar play.",
+    "downloadDesc": "Um player de mídia gratuito e de código aberto. Sem conta. Sem assinatura. É só dar play.",
     "privacyTitle": "Política de Privacidade",
     "privacyDesc": "Política de Privacidade do PPPlayer: app de música grátis para macOS, Linux, Windows, iOS e Android.",
     "termsTitle": "Termos de Serviço",
@@ -21,7 +21,7 @@
     "blog": "Blog​"
   },
   "footer": {
-    "desc": "Um player de música gratuito e de código aberto. Sem conta. Sem assinatura. É só dar play.",
+    "desc": "Um player de mídia gratuito e de código aberto. Sem conta. Sem assinatura. É só dar play.",
     "product": "Produto",
     "features": "Recursos",
     "download": "Baixar",
@@ -53,7 +53,7 @@
   "hero": {
     "title1": "Música.",
     "title2": "Sem complicações.",
-    "desc": "Um player de música gratuito e de código aberto. Sem conta. Sem assinatura. É só dar play.",
+    "desc": "Um player de mídia gratuito e de código aberto. Sem conta. Sem assinatura. É só dar play.",
     "getIos": "iOS (TestFlight)​",
     "getAndroid": "Baixar para Android",
     "getMac": "Baixar para Mac",

@@ -1,9 +1,9 @@
 {
   "metadata": {
     "homeTitle": "PPPlayer | Pumbasy Rerekua Sãso & Ojepe'áva",
-    "homeDesc": "Pumbasy rerekua sãso ha ojepe'áva. Ndaipóri mba'e ojehepyme'ẽva. Ehendu reínte.",
+    "homeDesc": "Mba'epu rerekua sãso ha ojepe'áva. Ndaipóri mba'e ojehepyme'ẽva. Ehendu reínte.",
     "downloadTitle": "Emboguejy PPPlayer Reípe",
-    "downloadDesc": "Pumbasy rerekua sãso ha ojepe'áva. Ndaipóri mba'e ojehepyme'ẽva. Ehendu reínte.",
+    "downloadDesc": "Mba'epu rerekua sãso ha ojepe'áva. Ndaipóri mba'e ojehepyme'ẽva. Ehendu reínte.",
     "privacyTitle": "Tembiporu Ñemimby",
     "privacyDesc": "Tembiporu Ñemimby PPPlayer-pe guarã: pumbasy rerekua sãso macOS, Linux, Windows, iOS ha Android-pe.",
     "termsTitle": "Tembiporu Ykeko",
@@ -21,7 +21,7 @@
     "blog": "Blog​"
   },
   "footer": {
-    "desc": "Pumbasy rerekua sãso ha ojepe'áva. Ndaipóri mba'e ojehepyme'ẽva. Ehendu reínte.",
+    "desc": "Mba'epu rerekua sãso ha ojepe'áva. Ndaipóri mba'e ojehepyme'ẽva. Ehendu reínte.",
     "product": "Mba'e",
     "features": "Tembiporukuéra",
     "download": "Emboguejy",
@@ -53,7 +53,7 @@
   "hero": {
     "title1": "Pumbasy.",
     "title2": "Ndaipóri jejoko.",
-    "desc": "Pumbasy rerekua sãso ha ojepe'áva. Ndaipóri mba'e ojehepyme'ẽva. Ehendu reínte.",
+    "desc": "Mba'epu rerekua sãso ha ojepe'áva. Ndaipóri mba'e ojehepyme'ẽva. Ehendu reínte.",
     "getIos": "iOS (TestFlight)​",
     "getAndroid": "Emboguejy Android-pe guarã",
     "getMac": "Emboguejy Mac-pe guarã",

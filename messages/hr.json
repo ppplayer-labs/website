@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "homeTitle": "PPPlayer | Besplatan glazbeni player otvorenog koda",
-    "homeDesc": "Besplatan glazbeni player otvorenog koda. Nema računa. Nema pretplate. Samo slušajte.",
+    "homeTitle": "PPPlayer | Besplatan media player otvorenog koda",
+    "homeDesc": "Besplatan media player otvorenog koda. Nema računa. Nema pretplate. Samo slušajte.",
     "downloadTitle": "Preuzmite PPPlayer besplatno",
-    "downloadDesc": "Besplatan glazbeni player otvorenog koda. Nema računa. Nema pretplate. Samo slušajte.",
+    "downloadDesc": "Besplatan media player otvorenog koda. Nema računa. Nema pretplate. Samo slušajte.",
     "privacyTitle": "Pravila privatnosti",
     "privacyDesc": "Pravila privatnosti za PPPlayer: besplatna glazbena aplikacija za macOS, Linux, Windows, iOS i Android.",
     "termsTitle": "Uvjeti pružanja usluge",
@@ -21,7 +21,7 @@
     "blog": "Blog​"
   },
   "footer": {
-    "desc": "Besplatan glazbeni player otvorenog koda. Nema računa. Nema pretplate. Samo slušajte.",
+    "desc": "Besplatan media player otvorenog koda. Nema računa. Nema pretplate. Samo slušajte.",
     "product": "Proizvod",
     "features": "Značajke",
     "download": "Preuzmi",
@@ -53,7 +53,7 @@
   "hero": {
     "title1": "Glazba.",
     "title2": "Bez trenja.",
-    "desc": "Besplatan glazbeni player otvorenog koda. Nema računa. Nema pretplate. Samo slušajte.",
+    "desc": "Besplatan media player otvorenog koda. Nema računa. Nema pretplate. Samo slušajte.",
     "getIos": "iOS (TestFlight)​",
     "getAndroid": "Preuzmi za Android",
     "getMac": "Preuzmi za Mac",
