@@ -1,7 +1,7 @@
 // Site configuration
 export const SITE_URL = 'https://ppplayer.com'
 export const SITE_NAME = 'PPPlayer'
-export const SITE_TAGLINE = 'A free, open-source music player. No account. Just play.'
+export const SITE_TAGLINE = 'A free, open-source media player. No account. Just play.'
 
 export const PROJECT_LINKS = {
   organization: 'https://github.com/ppplayer-labs',
