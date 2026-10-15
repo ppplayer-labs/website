@@ -126,7 +126,7 @@
     "reqTitle": "Wymagania dla {platform}",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina lub nowszy",
+        "os": "macOS 13.0 lub nowszy",
         "arch": "Apple Silicon i Intel (Uniwersalny)",
         "mem": "4 GB RAM (Zalecane)"
       },
@@ -141,13 +141,13 @@
         "mem": "4 GB RAM (Zalecane)"
       },
       "ios": {
-        "os": "iOS 14.0 lub nowszy",
+        "os": "iOS 15.0 lub nowszy",
         "arch": "ARM64",
         "mem": "2 GB RAM (Zalecane)"
       },
       "android": {
         "os": "Android 7.0 (API 24) lub nowszy",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (Zalecane)"
       }
     }

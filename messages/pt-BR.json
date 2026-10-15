@@ -124,7 +124,7 @@
     "reqTitle": "Requisitos para {platform}",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina ou mais recente",
+        "os": "macOS 13.0 ou mais recente",
         "arch": "Apple Silicon e Intel (Universal)",
         "mem": "4 GB RAM (Recomendado)"
       },
@@ -134,18 +134,18 @@
         "mem": "4 GB RAM (Recomendado)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 ou mais recente (Experimental)",
+        "os": "Ubuntu 20.04 ou mais recente",
         "arch": "x86_64",
         "mem": "4 GB RAM (Recomendado)"
       },
       "ios": {
-        "os": "iOS 14.0 ou mais recente",
+        "os": "iOS 15.0 ou mais recente",
         "arch": "ARM64",
         "mem": "2 GB RAM (Recomendado)"
       },
       "android": {
         "os": "Android 7.0 (API 24) ou mais recente",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (Recomendado)"
       }
     }
@@ -609,9 +609,9 @@
   "playbackUpdates": {
     "local": "As músicas importadas no iOS continuam disponíveis ao reabrir, com suas próprias capas.",
     "output": "Escolha AirPlay no iPhone ou Mac. Cast e DLNA aceitam mídia compatível.",
-    "queue": "Um botão dedicado à fila e controles de vídeo adaptáveis.",
+    "queue": "Fila em painel redimensionável no desktop e folha no celular.",
     "pause": "A pausa pela tela bloqueada ou Central de Controle do iPhone é respeitada.",
-    "note": "O iOS ainda não está disponível ao público. Os testes com Chromecast físico estão pendentes.",
+    "note": "O PPPlayer 4.0.0 foi lançado oficialmente. A reprodução do YouTube em segundo plano no Android não é suportada nesta versão.",
     "localTitle": "Música Local",
     "outputTitle": "Reproduzir em",
     "queueTitle": "FILA",

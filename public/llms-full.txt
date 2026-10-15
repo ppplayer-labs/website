@@ -16,7 +16,31 @@ PPPlayer is a free, cross-platform, open-source media player designed for discov
 - **Core Playback**: Supports audio/video streaming, local media playback, subtitles, M3U network streams, playlists, artist discovery, infinite artist radio, and related artists exploration.
 - **Platform Integration**: Picture-in-Picture (PiP), background playback and system controls depend on platform and source. The development iOS build forwards both native and WebKit system play/pause commands to explicit playback intent.
 
-## Upcoming Playback Update (Development Tree, October 2, 2026)
+## Current Release — PPPlayer 4.0.0 (October 15, 2026)
+
+PPPlayer 4.0.0 is the current production release (Application: 4.0.0+12, Windows MSIX: 4.0.0.0, Publisher: Devflier). Published assets include Android (Google Play, APK, AAB), macOS (DMG, ZIP; Apple Developer ID signed & notarized), Windows (Microsoft Store, MSIX direct), and Linux (AppImage, Debian package, portable tarball).
+
+Supported Platform Requirements:
+- macOS: macOS 13.0 or newer, Apple Silicon & Intel (Universal).
+- Windows: Windows 10 or later (64-bit x64).
+- Android: Android 7.0 (API 24) or newer (ARM64, x86_64).
+- Linux: Modern 64-bit distributions (Ubuntu 20.04+, Debian 11+, Fedora, Arch).
+- iOS: iOS 15.0 or newer (in development).
+
+Key 4.0.0 Features:
+- Chromium YouTube routing on Android, macOS, Windows, and Linux with native player integration; iOS retains WebKit. Local media and direct network streams use MediaKit.
+- Redesigned queue interface with resizable desktop sidebar, mobile bottom sheet, independent fullscreen browsing, and persisted width preference.
+- Comprehensive network playlist support: M3U, PLS, XSPF, and ASX parsing, automatic HLS stream classification, IPTV header/group grouping, relative URL resolution, and bounded HTTP reads.
+- Robust local-library handling with schema 14 migration, durable media relinking, metadata extraction, and video probing.
+- Corrected playback recovery, source switching, and macOS graceful Quit handshake with zero orphaned Chromium helpers.
+- First-class Linux packaging supporting standalone AppImage, Debian (.deb), and portable tarball.
+
+Known Limitations:
+- Android YouTube background playback when the screen is turned off is unsupported in this version (YouTube iframe policy compliance and platform power management). Local and direct media playback in the background remains fully supported.
+
+Releases & Assets: https://github.com/ppplayer-labs/app/releases
+
+## Earlier playback work (historical development notes, October 2, 2026)
 
 These features are in development and do not imply inclusion in current public downloads or public iOS availability.
 

@@ -124,7 +124,7 @@
     "reqTitle": "Вимоги для {platform}",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina або новіша",
+        "os": "macOS 13.0 або новіша",
         "arch": "Apple Silicon та Intel (Universal)",
         "mem": "4 ГБ ОЗП (Рекомендовано)"
       },
@@ -139,13 +139,13 @@
         "mem": "4 ГБ ОЗП (Рекомендовано)"
       },
       "ios": {
-        "os": "iOS 14.0 або новіша",
+        "os": "iOS 15.0 або новіша",
         "arch": "ARM64",
         "mem": "2 ГБ ОЗП (Рекомендовано)"
       },
       "android": {
         "os": "Android 7.0 (API 24) або новіша",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 ГБ ОЗП (Рекомендовано)"
       }
     }

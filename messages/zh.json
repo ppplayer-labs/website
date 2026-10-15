@@ -126,7 +126,7 @@
     "reqTitle": "{platform} 系统要求",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina或更高版本",
+        "os": "macOS 13.0或更高版本",
         "arch": "苹果硅与英特尔（通用）",
         "mem": "4 GB RAM（推荐）"
       },
@@ -141,13 +141,13 @@
         "mem": "4 GB RAM（推荐）"
       },
       "ios": {
-        "os": "iOS 14.0或更高版本",
+        "os": "iOS 15.0或更高版本",
         "arch": "ARM64",
         "mem": "2 GB RAM（推荐）"
       },
       "android": {
         "os": "Android 7.0（API 24）或更高版本",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM（推荐）"
       }
     }

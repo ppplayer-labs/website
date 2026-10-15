@@ -2,7 +2,7 @@
 
 > A free, open-source media player. No account. No subscription. Just play.
 
-PPPlayer is a cross-platform media player app available on macOS, Android (APK), iOS (TestFlight), and Windows. It lets users discover media, stream audio and video tracks, and explore artists — without requiring an account or subscription. The app is fully open-source under a permissive license and welcomes contributions.
+PPPlayer is a cross-platform media player app with published assets for macOS, Windows, Android, and Linux. iOS is currently in development. It lets users discover media, stream audio and video tracks, and explore artists — without requiring an account or subscription. The app is fully open-source under a permissive license and welcomes contributions.
 
 ## Key Information
 
@@ -10,7 +10,7 @@ PPPlayer is a cross-platform media player app available on macOS, Android (APK),
 - **Source Code**: https://github.com/ppplayer-labs/app
 - **GitHub Organization**: https://github.com/ppplayer-labs
 - **License**: MIT — https://github.com/ppplayer-labs/ppplayer/blob/main/LICENSE
-- **Current version**: See latest release on GitHub
+- **Current app version**: 4.0.0 (October 15, 2026), available on GitHub Releases and stores.
 - **Built with**: Flutter (Dart), targeting macOS, Windows, Android, iOS, and Linux.
 - **Detailed Documentation**: See [llms-full.txt](https://ppplayer.com/llms-full.txt) for comprehensive details on features, language support, and architecture.
 
@@ -23,23 +23,22 @@ PPPlayer is a cross-platform media player app available on macOS, Android (APK),
 - [Privacy Policy](https://ppplayer.com/privacy): Anonymous analytics and crash reporting; no personal data or accounts required.
 - [Terms of Service](https://ppplayer.com/terms): Usage terms
 
-## Verified Download Links
+## Configured Download Links
 
 - **Android (Google Play)**: https://play.google.com/store/apps/details?id=com.ppplayer.app
 - **Windows (Microsoft Store)**: https://apps.microsoft.com/store/detail/9NKNDF67BG4X
-- **Android (APK)** & **macOS**: Available via direct download on GitHub Releases
-- **iOS**: https://apps.apple.com/app/ppplayer (Configured, but pending public release)
-- **Linux**: Experimental (see download page)
+- **Android (APK)**, **macOS (DMG/ZIP)**, **Windows (MSIX)**, **Linux (AppImage/deb)**: Available via direct download on GitHub Releases
+- **iOS**: https://apps.apple.com/app/ppplayer (Configured, in development)
 
 ## Features
 
 - Stream and discover audio and video without an account
-- YouTube-powered playback via an embedded iframe bridge
+- YouTube-powered playback via Chromium-based player engine
 - Local video playback with advanced subtitle support
-- Network streaming and M3U playlist parsing
+- Network streaming and M3U/PLS/XSPF/ASX playlist parsing with IPTV support
 - Artist radio and discovery mode
-- Queue management, playlist support, and queue exports
-- Background audio playback on all platforms
+- Redesigned queue with resizable desktop panel and mobile sheet
+- Background audio playback for local and direct media (background YouTube playback on Android is unsupported in this version)
 - Open-source — inspect, fork, and contribute freely
 
 ## Contributing

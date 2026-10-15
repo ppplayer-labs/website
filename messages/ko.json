@@ -126,7 +126,7 @@
     "reqTitle": "{platform} 시스템 요구 사항",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina 이상",
+        "os": "macOS 13.0 이상",
         "arch": "Apple Silicon 및 Intel (유니버설)",
         "mem": "4 GB RAM (권장)"
       },
@@ -141,13 +141,13 @@
         "mem": "4 GB RAM (권장)"
       },
       "ios": {
-        "os": "iOS 14.0 이상",
+        "os": "iOS 15.0 이상",
         "arch": "ARM64",
         "mem": "2 GB RAM (권장)"
       },
       "android": {
         "os": "Android 7.0 (API 24) 이상",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (권장)"
       }
     }

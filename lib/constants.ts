@@ -16,8 +16,11 @@ export const DOWNLOAD_LINKS = {
   ios: 'https://apps.apple.com/app/ppplayer',
   android: 'https://play.google.com/store/apps/details?id=com.ppplayer.app&pcampaignid=web_share',
   windows: 'https://apps.microsoft.com/store/detail/9NKNDF67BG4X?cid=DevShareMCLPCS',
+  windowsMsix: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Windows.msix',
   macos: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-macOS.dmg',
   androidApk: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Android.apk',
+  linuxAppImage: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Linux-x86_64.AppImage',
+  linuxDeb: 'https://github.com/ppplayer-labs/app/releases/latest/download/ppplayer_4.0.0-12_amd64.deb',
 }
 
 export type PlatformConfig = {
@@ -51,7 +54,7 @@ export const PLATFORMS: PlatformConfig[] = [
     color: 'from-gray-400 to-gray-200',
     isAvailable: true,
     requirements: {
-      os: 'macOS 10.15 Catalina or newer',
+      os: 'macOS 13.0 or newer',
       architecture: 'Apple Silicon & Intel (Universal)',
       memory: '4 GB RAM (Recommended)',
     }
@@ -70,24 +73,27 @@ export const PLATFORMS: PlatformConfig[] = [
       architecture: 'x64',
       memory: '4 GB RAM (Recommended)',
     },
-    secondaryHref: '#',
-    secondaryBadge: 'Direct Download',
-    secondaryIsAvailable: false,
+    secondaryHref: DOWNLOAD_LINKS.windowsMsix,
+    secondaryBadge: 'MSIX (Direct)',
+    secondaryIsAvailable: true,
   },
   {
     id: 'linux',
     name: 'Linux',
     label: 'Linux',
-    description: 'Available for modern Linux distributions.',
-    badge: 'Direct Download',
-    href: '#',
+    description: 'Available for modern 64-bit Linux distributions.',
+    badge: 'AppImage',
+    href: DOWNLOAD_LINKS.linuxAppImage,
     color: 'from-yellow-400 to-amber-300',
-    isAvailable: false,
+    isAvailable: true,
     requirements: {
-      os: 'Ubuntu 20.04 or newer (Experimental)',
+      os: 'Ubuntu 20.04+ / Debian 11+ / modern Linux',
       architecture: 'x86_64',
       memory: '4 GB RAM (Recommended)',
-    }
+    },
+    secondaryHref: DOWNLOAD_LINKS.linuxDeb,
+    secondaryBadge: '.deb',
+    secondaryIsAvailable: true,
   },
   {
     id: 'ios',
@@ -99,7 +105,7 @@ export const PLATFORMS: PlatformConfig[] = [
     color: 'from-slate-400 to-slate-200',
     isAvailable: false,
     requirements: {
-      os: 'iOS 14.0 or newer',
+      os: 'iOS 15.0 or newer',
       architecture: 'ARM64',
       memory: '2 GB RAM (Recommended)',
     }
@@ -115,7 +121,7 @@ export const PLATFORMS: PlatformConfig[] = [
     isAvailable: true,
     requirements: {
       os: 'Android 7.0 (API 24) or newer',
-      architecture: 'ARM64 / ARM / x86_64',
+      architecture: 'ARM64 / x86_64',
       memory: '2 GB RAM (Recommended)',
     },
     secondaryHref: DOWNLOAD_LINKS.androidApk,

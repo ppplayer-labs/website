@@ -124,7 +124,7 @@
     "reqTitle": "{platform} жүйелік талаптары",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina немесе жаңарақ",
+        "os": "macOS 13.0 немесе жаңарақ",
         "arch": "Apple Silicon және Intel (Универсал)",
         "mem": "4 GB RAM (ұсынылады)"
       },
@@ -139,13 +139,13 @@
         "mem": "4 GB RAM (ұсынылады)"
       },
       "ios": {
-        "os": "iOS 14.0 немесе жаңарақ",
+        "os": "iOS 15.0 немесе жаңарақ",
         "arch": "ARM64",
         "mem": "2 GB RAM (ұсынылады)"
       },
       "android": {
         "os": "Android 7.0 (API 24) немесе жаңарақ",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (ұсынылады)"
       }
     }

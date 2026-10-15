@@ -126,7 +126,7 @@
     "reqTitle": "{platform} आवश्यकताएँ",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina या नया संस्करण",
+        "os": "macOS 13.0 या नया संस्करण",
         "arch": "Apple Silicon & Intel (Universal)​",
         "mem": "4 GB RAM (अनुशंसित)"
       },
@@ -141,13 +141,13 @@
         "mem": "4 GB RAM (अनुशंसित)"
       },
       "ios": {
-        "os": "iOS 14.0 या नया संस्करण",
+        "os": "iOS 15.0 या नया संस्करण",
         "arch": "ARM64",
         "mem": "2 GB RAM (अनुशंसित)"
       },
       "android": {
         "os": "Android 7.0 (API 24) या नया संस्करण",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (अनुशंसित)"
       }
     }

@@ -126,7 +126,7 @@
     "reqTitle": "{platform} Gereksinimleri",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina veya daha yeni",
+        "os": "macOS 13.0 veya daha yeni",
         "arch": "Apple Silicon ve Intel (Evrensel)",
         "mem": "4 GB RAM (önerilen)"
       },
@@ -141,13 +141,13 @@
         "mem": "4 GB RAM (önerilen)"
       },
       "ios": {
-        "os": "iOS 14.0 veya daha yeni",
+        "os": "iOS 15.0 veya daha yeni",
         "arch": "ARM64",
         "mem": "2 GB RAM (önerilen)"
       },
       "android": {
         "os": "Android 7.0 (API 24) veya daha yeni",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (önerilen)"
       }
     }

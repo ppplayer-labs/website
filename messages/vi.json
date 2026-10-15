@@ -124,7 +124,7 @@
     "reqTitle": "Yêu cầu cho {platform}",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina hoặc mới hơn",
+        "os": "macOS 13.0 hoặc mới hơn",
         "arch": "Apple Silicon & Intel (Đa năng)",
         "mem": "RAM 4 GB (Được khuyến nghị)"
       },
@@ -139,13 +139,13 @@
         "mem": "RAM 4 GB (Được khuyến nghị)"
       },
       "ios": {
-        "os": "iOS 14.0 hoặc mới hơn",
+        "os": "iOS 15.0 hoặc mới hơn",
         "arch": "ARM64",
         "mem": "RAM 2 GB (Được khuyến nghị)"
       },
       "android": {
         "os": "Android 7.0 (API 24) hoặc mới hơn",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "RAM 2 GB (Được khuyến nghị)"
       }
     }

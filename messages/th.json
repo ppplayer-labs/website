@@ -124,7 +124,7 @@
     "reqTitle": "ข้อกำหนดสำหรับ {platform}",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina หรือใหม่กว่า",
+        "os": "macOS 13.0 หรือใหม่กว่า",
         "arch": "Apple Silicon & Intel (Universal)​",
         "mem": "RAM 4 GB (แนะนำ)"
       },
@@ -139,13 +139,13 @@
         "mem": "RAM 4 GB (แนะนำ)"
       },
       "ios": {
-        "os": "iOS 14.0 หรือใหม่กว่า",
+        "os": "iOS 15.0 หรือใหม่กว่า",
         "arch": "ARM64",
         "mem": "RAM 2 GB (แนะนำ)"
       },
       "android": {
         "os": "Android 7.0 (API 24) หรือใหม่กว่า",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "RAM 2 GB (แนะนำ)"
       }
     }

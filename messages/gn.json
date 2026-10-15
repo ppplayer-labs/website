@@ -124,7 +124,7 @@
     "reqTitle": "{platform} Ykeko",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina térã pyahuvéva",
+        "os": "macOS 13.0 térã pyahuvéva",
         "arch": "Apple Silicon ha Intel (Universal)",
         "mem": "4 GB RAM (Ojejeruréva)"
       },
@@ -139,13 +139,13 @@
         "mem": "4 GB RAM (Ojejeruréva)"
       },
       "ios": {
-        "os": "iOS 14.0 térã pyahuvéva",
+        "os": "iOS 15.0 térã pyahuvéva",
         "arch": "ARM64",
         "mem": "2 GB RAM (Ojejeruréva)"
       },
       "android": {
         "os": "Android 7.0 (API 24) térã pyahuvéva",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (Ojejeruréva)"
       }
     }

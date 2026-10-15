@@ -126,7 +126,7 @@
     "reqTitle": "{platform} rendszerkövetelmények",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina vagy újabb",
+        "os": "macOS 13.0 vagy újabb",
         "arch": "Apple Silicon és Intel (Univerzális)",
         "mem": "4 GB RAM (ajánlott)"
       },
@@ -136,18 +136,18 @@
         "mem": "4 GB RAM (ajánlott)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 vagy újabb (kísérleti)",
+        "os": "Ubuntu 20.04 vagy újabb",
         "arch": "x86_64",
         "mem": "4 GB RAM (ajánlott)"
       },
       "ios": {
-        "os": "iOS 14.0 vagy újabb",
+        "os": "iOS 15.0 vagy újabb",
         "arch": "ARM64",
         "mem": "2 GB RAM (ajánlott)"
       },
       "android": {
         "os": "Android 7.0 (API 24) vagy újabb",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (ajánlott)"
       }
     }

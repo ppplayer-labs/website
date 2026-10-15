@@ -126,7 +126,7 @@
     "reqTitle": "{platform} nõuded",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina või uuem",
+        "os": "macOS 13.0 või uuem",
         "arch": "Apple Silicon ja Intel (universaalne)",
         "mem": "4 GB RAM (soovitatav)"
       },
@@ -141,13 +141,13 @@
         "mem": "4 GB RAM (soovitatav)"
       },
       "ios": {
-        "os": "iOS 14.0 või uuem",
+        "os": "iOS 15.0 või uuem",
         "arch": "ARM64",
         "mem": "2 GB RAM (soovitatav)"
       },
       "android": {
         "os": "Android 7.0 (API 24) või uuem",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (soovitatav)"
       }
     }

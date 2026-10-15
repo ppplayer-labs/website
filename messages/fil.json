@@ -124,7 +124,7 @@
     "reqTitle": "Mga Kinakailangan sa {platform}",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina o mas bago",
+        "os": "macOS 13.0 o mas bago",
         "arch": "Apple Silicon o Intel (Universal)",
         "mem": "4 GB RAM (Inirerekomenda)"
       },
@@ -134,18 +134,18 @@
         "mem": "4 GB RAM (Inirerekomenda)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 o mas bago (Experimental)",
+        "os": "Ubuntu 20.04 o mas bago",
         "arch": "x86_64",
         "mem": "4 GB RAM (Inirerekomenda)"
       },
       "ios": {
-        "os": "iOS 14.0 o mas bago",
+        "os": "iOS 15.0 o mas bago",
         "arch": "ARM64",
         "mem": "2 GB RAM (Inirerekomenda)"
       },
       "android": {
         "os": "Android 7.0 (API 24) o mas bago",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (Inirerekomenda)"
       }
     }

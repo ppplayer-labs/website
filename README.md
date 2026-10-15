@@ -23,10 +23,13 @@ Read `AGENTS.md` and the installed Next.js guides in `node_modules/next/dist/doc
 
 ## Product content
 
+The current application release is PPPlayer 4.0.0 (`4.0.0+12`). `content/blog/release-status/` records the published 4.0.0 release notes and platform support. Package.json 2.0.1 identifies the website package, not the app release. Requirements describe 4.0.0; download links resolve published 4.0.0 artifacts.
+
+
 - `components/sections/PlaybackUpdatesSection.tsx`: upcoming playback features, shared by the homepage and changelog.
 - `messages/*.json` → `playbackUpdates`: playback feature copy in all 38 supported languages, with shared interface terminology in `common`. The section inherits the page’s text direction.
 - `content/blog/play-on-local-files-ios/{en,pt-BR}.md`: usage guide for local files, Play On, queue and iPhone system controls. Existing article routes fall back to English when a translation is missing.
-- `messages/*.json`: localized UI, released changelog entries and system requirements. iOS requires 14.0 or later.
+- `messages/*.json`: localized UI, released changelog entries and system requirements. iOS requires 15.0 or later; macOS 13+ (Apple Silicon & Intel Universal), Windows 10+ (64-bit), Android 7.0+ (ARM64/x86_64), Linux x86_64; 4 GB RAM recommended for Desktop, 2 GB RAM for Mobile.
 - `scripts/localization/`: explicit playback/requirements translations and a repeatable catalog updater. Shared terms come from the app catalogs; there is no automatic English fallback.
 - `lib/constants.ts`: platform availability and download links.
 - `public/llms-full.txt`: machine-readable product information; keep it consistent with the visible site.
@@ -34,6 +37,12 @@ Read `AGENTS.md` and the installed Next.js guides in `node_modules/next/dist/doc
 Mark working-tree features **upcoming** until a public release includes them. Do not invent a release number or claim that existing downloads include development changes. Keep iOS availability distinct from physical-device development testing. Cast/DLNA implementation and fake-receiver tests do not establish physical receiver compatibility.
 
 New guides need frontmatter (`title`, `excerpt`, `date`, `author`, `category`, `readTime`, `isDraft`). The blog and sitemap discover them automatically. Use the reader's locale in localized internal links.
+
+## Validation checkpoint — October 15, 2026
+
+Lint, TypeScript, 33 IndexNow tests and `npx next build --webpack` passed locally. Default Turbopack build was blocked by font-fetch/worker-port restrictions on this host; the default Docker build still needs deployment-environment validation. Five production-build routes returned expected release content in a local `next start` check; standalone/Docker startup remains a separate gate. No website deployment or IndexNow submission was performed.
+
+The production build now explicitly uses Next.js Webpack, matching the existing development bundler. Turbopack could not start its CSS worker on this host even with expanded execution permissions. This is an explicit build-tool selection, not a claimed Turbopack pass; run `npm run build` to exercise the supported default.
 
 ## Deployment
 

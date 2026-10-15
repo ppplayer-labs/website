@@ -126,7 +126,7 @@
     "reqTitle": "Požadavky na {platform}",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina nebo novější",
+        "os": "macOS 13.0 nebo novější",
         "arch": "Apple Silicon a Intel (Universal)",
         "mem": "4 GB RAM (Doporučeno)"
       },
@@ -141,13 +141,13 @@
         "mem": "4 GB RAM (Doporučeno)"
       },
       "ios": {
-        "os": "iOS 14.0 nebo novější",
+        "os": "iOS 15.0 nebo novější",
         "arch": "ARM64",
         "mem": "2 GB RAM (Doporučeno)"
       },
       "android": {
         "os": "Android 7.0 (API 24) nebo novější",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (Doporučeno)"
       }
     }

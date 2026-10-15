@@ -126,7 +126,7 @@
     "reqTitle": "{platform} のシステム要件",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina以降",
+        "os": "macOS 13.0以降",
         "arch": "Appleシリコン＆Intel（ユニバーサル）",
         "mem": "4 GB RAM（推奨）"
       },
@@ -141,13 +141,13 @@
         "mem": "4 GB RAM（推奨）"
       },
       "ios": {
-        "os": "iOS 14.0以降",
+        "os": "iOS 15.0以降",
         "arch": "ARM64",
         "mem": "2 GB RAM（推奨）"
       },
       "android": {
         "os": "Android 7.0（API 24）以降",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM（推奨）"
       }
     }

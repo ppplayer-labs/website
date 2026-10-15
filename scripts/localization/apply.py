@@ -16,11 +16,15 @@ for row in rows:
     app = json.loads((root.parent / 'app/lib/l10n' / f"app_{'pt' if locale == 'pt-BR' else locale}.arb").read_text())
     data['playbackUpdates'] = {**row, 'localTitle': app['localMusicCard'], 'outputTitle': app['playOn'], 'queueTitle': app['queue'], 'pauseTitle': app['pause']}
     data['common'] = {'language': app['language'], 'menu': app['moreOptions'], 'home': app['home'], 'artist': app['artist'], 'radio': app['radioStations'], 'player': app['fullscreen']}
-    data['downloadCTA']['reqs']['ios']['os'] = data['downloadCTA']['reqs']['ios']['os'].replace('13.0', '14.0')
+    data['downloadCTA']['reqs']['ios']['os'] = data['downloadCTA']['reqs']['ios']['os'].replace('14.0', '15.0')
     if locale in requirements:
         req = requirements[locale]
         for platform in ['macos', 'windows', 'linux', 'ios', 'android']:
             data['downloadCTA']['reqs'][platform]['os'] = req[platform]
             data['downloadCTA']['reqs'][platform]['mem'] = req['memory'].format(size=2 if platform in ['ios', 'android'] else 4)
+    # Update OS and architecture requirements for 4.0.0 while preserving localized memory specs
+    data['downloadCTA']['reqs']['macos']['os'] = data['downloadCTA']['reqs']['macos']['os'].replace('10.15 Catalina', '13.0').replace('10.15', '13.0')
+    data['downloadCTA']['reqs']['android']['arch'] = 'ARM64 / x86_64'
+    data['downloadCTA']['reqs']['linux']['os'] = data['downloadCTA']['reqs']['linux']['os'].replace(' (Experimental)', '').replace(' (kísérleti)', '').replace(' (экспериментальная)', '')
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 print(f'Applied playback and accessibility translations to {len(files)} catalogs')

@@ -124,7 +124,7 @@
     "reqTitle": "{platform} talablari",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina yoki undan yangiroq",
+        "os": "macOS 13.0 yoki undan yangiroq",
         "arch": "Apple Silicon va Intel (Universal)",
         "mem": "4 GB RAM (Tavsiya etiladi)"
       },
@@ -139,13 +139,13 @@
         "mem": "4 GB RAM (Tavsiya etiladi)"
       },
       "ios": {
-        "os": "iOS 14.0 yoki undan yangiroq",
+        "os": "iOS 15.0 yoki undan yangiroq",
         "arch": "ARM64",
         "mem": "2 GB RAM (Tavsiya etiladi)"
       },
       "android": {
         "os": "Android 7.0 (API 24) yoki undan yangiroq",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (Tavsiya etiladi)"
       }
     }

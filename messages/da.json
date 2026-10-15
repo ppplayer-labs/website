@@ -126,7 +126,7 @@
     "reqTitle": "Krav til {platform}",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina eller nyere",
+        "os": "macOS 13.0 eller nyere",
         "arch": "Apple Silicon og Intel (Universal)",
         "mem": "4 GB RAM (Anbefalet)"
       },
@@ -141,13 +141,13 @@
         "mem": "4 GB RAM (Anbefalet)"
       },
       "ios": {
-        "os": "iOS 14.0 eller nyere",
+        "os": "iOS 15.0 eller nyere",
         "arch": "ARM64",
         "mem": "2 GB RAM (Anbefalet)"
       },
       "android": {
         "os": "Android 7.0 (API 24) eller nyere",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (Anbefalet)"
       }
     }

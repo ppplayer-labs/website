@@ -124,7 +124,7 @@
     "reqTitle": "{platform} Requirements",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina or newer",
+        "os": "macOS 13.0 or newer",
         "arch": "Apple Silicon & Intel (Universal)",
         "mem": "4 GB RAM (Recommended)"
       },
@@ -134,18 +134,18 @@
         "mem": "4 GB RAM (Recommended)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 or newer (Experimental)",
+        "os": "Ubuntu 20.04 or newer",
         "arch": "x86_64",
         "mem": "4 GB RAM (Recommended)"
       },
       "ios": {
-        "os": "iOS 14.0 or newer",
+        "os": "iOS 15.0 or newer",
         "arch": "ARM64",
         "mem": "2 GB RAM (Recommended)"
       },
       "android": {
         "os": "Android 7.0 (API 24) or newer",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (Recommended)"
       }
     }
@@ -609,9 +609,9 @@
   "playbackUpdates": {
     "local": "Imported iOS songs stay available after reopening, with their own artwork.",
     "output": "Choose AirPlay on iPhone or Mac. Cast and DLNA support compatible media.",
-    "queue": "A dedicated Queue button and responsive video controls.",
+    "queue": "Resizable desktop queue panel and mobile queue sheet.",
     "pause": "Pause from the iPhone lock screen or Control Center stays paused.",
-    "note": "iOS is not publicly available. Physical Chromecast testing is pending.",
+    "note": "PPPlayer 4.0.0 is officially released. Background YouTube playback on Android is unsupported in this version.",
     "localTitle": "Local Music",
     "outputTitle": "Play On",
     "queueTitle": "QUEUE",

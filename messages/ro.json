@@ -124,7 +124,7 @@
     "reqTitle": "Cerințe pentru {platform}",
     "reqs": {
       "macos": {
-        "os": "macOS 10.15 Catalina sau mai nou",
+        "os": "macOS 13.0 sau mai nou",
         "arch": "Apple Silicon & Intel (Universal)​",
         "mem": "4 GB RAM (Recomandat)"
       },
@@ -134,18 +134,18 @@
         "mem": "4 GB RAM (Recomandat)"
       },
       "linux": {
-        "os": "Ubuntu 20.04 sau mai nou (Experimental)",
+        "os": "Ubuntu 20.04 sau mai nou",
         "arch": "x86_64",
         "mem": "4 GB RAM (Recomandat)"
       },
       "ios": {
-        "os": "iOS 14.0 sau mai nou",
+        "os": "iOS 15.0 sau mai nou",
         "arch": "ARM64",
         "mem": "2 GB RAM (Recomandat)"
       },
       "android": {
         "os": "Android 7.0 (API 24) sau mai nou",
-        "arch": "ARM64 / ARM / x86_64",
+        "arch": "ARM64 / x86_64",
         "mem": "2 GB RAM (Recomandat)"
       }
     }
