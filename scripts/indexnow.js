@@ -59,7 +59,10 @@ async function waitForRevision(expected, {
     try {
       const response = await readResponse(fetchImpl, `${REVISION_URL}?revision=${expected}`);
       if (response.status === 200 && response.body.trim() === expected) return;
-      reason = `HTTP ${response.status}; deployed revision does not match`;
+      const actual = response.body.trim();
+      reason = response.status === 200
+        ? `HTTP 200; deployed revision (${actual.slice(0, 16)}...) does not match expected (${expected.slice(0, 16)}...)`
+        : `HTTP ${response.status}; deployed revision does not match`;
     } catch (error) {
       reason = error.message;
     }
