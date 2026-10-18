@@ -78,14 +78,17 @@ export default function PlatformCardsSection() {
       name: t('linux.name'),
       label: t('linux.label'),
       description: t('linux.desc'),
-      badge: 'AppImage',
-      href: DOWNLOAD_LINKS.linuxAppImage,
+      badge: 'Snap Store',
+      href: DOWNLOAD_LINKS.linuxSnap,
       color: 'rgba(234, 179, 8, 0.1)',
       gradient: 'from-yellow-500/10 to-transparent',
       isAvailable: true,
-      secondaryHref: DOWNLOAD_LINKS.linuxDeb,
-      secondaryBadge: '.deb',
+      secondaryHref: DOWNLOAD_LINKS.linuxAppImage,
+      secondaryBadge: 'AppImage',
       secondaryIsAvailable: true,
+      tertiaryHref: DOWNLOAD_LINKS.linuxDeb,
+      tertiaryBadge: '.deb',
+      tertiaryIsAvailable: true,
     },
   ];
 
@@ -146,7 +149,7 @@ export default function PlatformCardsSection() {
                   <div className="relative z-20 mt-8 flex flex-wrap items-center gap-3">
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-white/80 group-hover:bg-white/10 group-hover:text-white transition-all duration-300 pointer-events-none">
                       {platform.badge}
-                      {(platform.badge?.includes('Store') || platform.badge?.includes('Play')) ? (
+                      {(platform.badge?.includes('Store') || platform.badge?.includes('Play') || platform.badge?.includes('Snap')) ? (
                         <svg className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
@@ -168,6 +171,28 @@ export default function PlatformCardsSection() {
                         <span className="flex items-center gap-1.5">
                           {platform.secondaryBadge}
                           {platform.secondaryIsAvailable === false && (
+                            <span className="text-[9px] uppercase tracking-wider px-1.5 py-0.5 rounded-sm bg-white/10 text-white/70 whitespace-nowrap">
+                              {tCTA('comingSoon')}
+                            </span>
+                          )}
+                        </span>
+                        <svg className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                      </span>
+                    )}
+
+                    {platform.tertiaryHref && platform.tertiaryBadge && (
+                      <span
+                        className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 text-sm font-medium transition-all duration-300 pointer-events-none shadow-sm ${
+                          platform.tertiaryIsAvailable === false
+                            ? 'bg-white/5 text-white/50'
+                            : 'bg-white/5 text-white/80 group-hover:bg-white/10 group-hover:text-white'
+                        }`}
+                      >
+                        <span className="flex items-center gap-1.5">
+                          {platform.tertiaryBadge}
+                          {platform.tertiaryIsAvailable === false && (
                             <span className="text-[9px] uppercase tracking-wider px-1.5 py-0.5 rounded-sm bg-white/10 text-white/70 whitespace-nowrap">
                               {tCTA('comingSoon')}
                             </span>

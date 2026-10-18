@@ -19,6 +19,7 @@ export const DOWNLOAD_LINKS = {
   windowsMsix: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Windows.msix',
   macos: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-macOS.dmg',
   androidApk: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Android.apk',
+  linuxSnap: 'https://snapcraft.io/ppplayer',
   linuxAppImage: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Linux-x86_64.AppImage',
   linuxDeb: 'https://github.com/ppplayer-labs/app/releases/latest/download/ppplayer_4.0.1-13_amd64.deb',
 }
@@ -40,6 +41,9 @@ export type PlatformConfig = {
   secondaryHref?: string;
   secondaryBadge?: string;
   secondaryIsAvailable?: boolean;
+  tertiaryHref?: string;
+  tertiaryBadge?: string;
+  tertiaryIsAvailable?: boolean;
 };
 
 // Platform data
@@ -81,9 +85,9 @@ export const PLATFORMS: PlatformConfig[] = [
     id: 'linux',
     name: 'Linux',
     label: 'Linux',
-    description: 'Available for modern 64-bit Linux distributions.',
-    badge: 'AppImage',
-    href: DOWNLOAD_LINKS.linuxAppImage,
+    description: 'Available on the Snap Store, as AppImage, and Debian/Ubuntu packages.',
+    badge: 'Snap Store',
+    href: DOWNLOAD_LINKS.linuxSnap,
     color: 'from-yellow-400 to-amber-300',
     isAvailable: true,
     requirements: {
@@ -91,9 +95,12 @@ export const PLATFORMS: PlatformConfig[] = [
       architecture: 'x86_64',
       memory: '4 GB RAM (Recommended)',
     },
-    secondaryHref: DOWNLOAD_LINKS.linuxDeb,
-    secondaryBadge: '.deb',
+    secondaryHref: DOWNLOAD_LINKS.linuxAppImage,
+    secondaryBadge: 'AppImage',
     secondaryIsAvailable: true,
+    tertiaryHref: DOWNLOAD_LINKS.linuxDeb,
+    tertiaryBadge: '.deb',
+    tertiaryIsAvailable: true,
   },
   {
     id: 'ios',
@@ -185,17 +192,28 @@ export const getPlatformOptions = (
       badge: p.isAvailable ? undefined : (t?.comingSoon || 'Coming Soon'),
       isAvailable: p.isAvailable,
       href: p.href,
-      isExternal: p.badge?.includes('Store') || p.badge?.includes('Play'),
+      isExternal: p.badge?.includes('Store') || p.badge?.includes('Play') || p.badge?.includes('Snap'),
     }
   ];
 
   if (p.secondaryHref && p.secondaryBadge) {
     opts.push({
       id: `${p.id}-secondary`,
-      name: t?.directDownload || 'Direct Download',
-      badge: p.secondaryIsAvailable === false ? (t?.comingSoon || 'Coming Soon') : p.secondaryBadge,
+      name: p.secondaryBadge || t?.directDownload || 'Direct Download',
+      badge: p.secondaryIsAvailable === false ? (t?.comingSoon || 'Coming Soon') : undefined,
       isAvailable: p.secondaryIsAvailable !== false,
       href: p.secondaryHref,
+      isExternal: false,
+    });
+  }
+
+  if (p.tertiaryHref && p.tertiaryBadge) {
+    opts.push({
+      id: `${p.id}-tertiary`,
+      name: p.tertiaryBadge,
+      badge: p.tertiaryIsAvailable === false ? (t?.comingSoon || 'Coming Soon') : undefined,
+      isAvailable: p.tertiaryIsAvailable !== false,
+      href: p.tertiaryHref,
       isExternal: false,
     });
   }
