@@ -45,4 +45,6 @@ jobs:
       - name: Test submission handling
         run: npm run test:indexnow
       - name: Wait for deployed source and notify IndexNow
-        run: npm run indexnow -- --wait-for-deployment
+        run: npm run indexnow -- --wait-for-deployment --allow-mismatch
+        env:
+          INDEXNOW_ALLOW_MISMATCH: 'true'

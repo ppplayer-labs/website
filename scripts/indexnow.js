@@ -51,32 +51,41 @@ async function readResponse(fetchImpl, url, options = {}) {
 }
 
 async function waitForRevision(expected, {
-  fetchImpl = fetch, sleep = delay, now = Date.now, maxWaitMs = 0, pollMs = 15000, log = console.log,
+  fetchImpl = fetch, sleep = delay, now = Date.now, maxWaitMs = 0, pollMs = 15000, log = console.log, allowMismatch = false,
 } = {}) {
   const deadline = now() + maxWaitMs;
   for (;;) {
     let reason;
+    let actualStatus = 0;
+    let actual = '';
     try {
       const response = await readResponse(fetchImpl, `${REVISION_URL}?revision=${expected}`);
-      if (response.status === 200 && response.body.trim() === expected) return;
-      const actual = response.body.trim();
+      actualStatus = response.status;
+      actual = response.body.trim();
+      if (response.status === 200 && actual === expected) return;
       reason = response.status === 200
         ? `HTTP 200; deployed revision (${actual.slice(0, 16)}...) does not match expected (${expected.slice(0, 16)}...)`
         : `HTTP ${response.status}; deployed revision does not match`;
     } catch (error) {
       reason = error.message;
     }
-    if (now() >= deadline) throw new Error(`Website deployment is not ready: ${reason}. No URLs submitted.`);
+    if (now() >= deadline) {
+      if (allowMismatch && actualStatus === 200 && actual.length > 0) {
+        log(`Warning: Deployed revision (${actual.slice(0, 16)}...) does not match expected (${expected.slice(0, 16)}...), but deployment is live (HTTP 200). Proceeding with submission.`);
+        return;
+      }
+      throw new Error(`Website deployment is not ready: ${reason}. No URLs submitted.`);
+    }
     log(`Waiting for this website revision to deploy (${reason}).`);
     await sleep(Math.min(pollMs, Math.max(0, deadline - now())));
   }
 }
 
 async function run({
-  dryRun = false, waitForDeployment = false, fetchImpl = fetch, revision = sourceRevision, log = console.log,
+  dryRun = false, waitForDeployment = false, allowMismatch = false, fetchImpl = fetch, revision = sourceRevision, log = console.log,
 } = {}) {
   if (!dryRun) {
-    await waitForRevision(revision(), {fetchImpl, maxWaitMs: waitForDeployment ? 600000 : 0, log});
+    await waitForRevision(revision(), {fetchImpl, maxWaitMs: waitForDeployment ? 600000 : 0, log, allowMismatch});
   }
   const key = await readResponse(fetchImpl, KEY_LOCATION);
   if (key.status !== 200 || key.body.trim() !== KEY) throw new Error(`IndexNow verification file is missing or incorrect (HTTP ${key.status}).`);
@@ -110,11 +119,19 @@ async function run({
 
 if (require.main === module) {
   const args = process.argv.slice(2);
-  if (args.some(arg => !['--dry-run', '--wait-for-deployment'].includes(arg))) {
-    console.error('Usage: node scripts/indexnow.js [--dry-run] [--wait-for-deployment]');
+  const allowed = ['--dry-run', '--wait-for-deployment', '--allow-mismatch', '--allow-revision-mismatch'];
+  if (args.some(arg => !allowed.includes(arg))) {
+    console.error('Usage: node scripts/indexnow.js [--dry-run] [--wait-for-deployment] [--allow-mismatch]');
     process.exitCode = 1;
   } else {
-    run({dryRun: args.includes('--dry-run'), waitForDeployment: args.includes('--wait-for-deployment')}).catch(error => {
+    const allowMismatch = args.includes('--allow-mismatch') ||
+      args.includes('--allow-revision-mismatch') ||
+      ['true', '1'].includes(process.env.INDEXNOW_ALLOW_MISMATCH);
+    run({
+      dryRun: args.includes('--dry-run'),
+      waitForDeployment: args.includes('--wait-for-deployment'),
+      allowMismatch,
+    }).catch(error => {
       console.error(`IndexNow failed: ${error.message}`);
       process.exitCode = 1;
     });

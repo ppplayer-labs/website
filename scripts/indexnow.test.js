@@ -152,3 +152,28 @@ test('provider-specific pending verification stays a failure with actionable gui
   await assert.rejects(run({...fixture, fetchImpl}), /verification is still pending.*Retry the workflow/);
   assert.equal(fixture.calls.filter(call => call.options.method === 'POST').length, 1);
 });
+
+test('allows mismatch when allowMismatch is true and deployed revision responds HTTP 200', async () => {
+  const logs = [];
+  const fixture = server({deployed: 'other-revision'});
+  await run({...fixture, allowMismatch: true, log: msg => logs.push(msg)});
+  assert.ok(logs.some(log => log.includes('does not match expected') && log.includes('Proceeding')));
+  assert.equal(fixture.calls.filter(call => call.options.method === 'POST').length, 1);
+});
+
+test('allowMismatch still rejects when deployed endpoint fails with non-200', async () => {
+  let clock = 0;
+  await assert.rejects(
+    waitForRevision('new', {
+      fetchImpl: async () => response('error', 500),
+      now: () => clock,
+      sleep: async ms => { clock += ms; },
+      maxWaitMs: 20,
+      pollMs: 10,
+      allowMismatch: true,
+      log: () => {},
+    }),
+    /Website deployment is not ready: HTTP 500/
+  );
+});
+

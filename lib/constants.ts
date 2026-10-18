@@ -20,7 +20,7 @@ export const DOWNLOAD_LINKS = {
   macos: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-macOS.dmg',
   androidApk: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Android.apk',
   linuxAppImage: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Linux-x86_64.AppImage',
-  linuxDeb: 'https://github.com/ppplayer-labs/app/releases/latest/download/ppplayer_4.0.0-12_amd64.deb',
+  linuxDeb: 'https://github.com/ppplayer-labs/app/releases/latest/download/ppplayer_4.0.1-13_amd64.deb',
 }
 
 export type PlatformConfig = {
