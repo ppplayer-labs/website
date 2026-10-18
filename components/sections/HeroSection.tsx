@@ -101,6 +101,7 @@ export default function HeroSection() {
         title={tCTA('modalTitle', { platform: activePlatformData?.name || '' })}
         description={tCTA('modalDesc', { platform: activePlatformData?.name || '' })}
         cancelText={tCTA('cancel')}
+        installCommand={activePlatformData?.installCommand}
         options={getPlatformOptions(activeModalPlatform, {
           primaryDownload: tCTA('primaryDownload'),
           directDownload: tCTA('directDownload'),

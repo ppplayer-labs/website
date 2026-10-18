@@ -1,8 +1,8 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Download, Smartphone } from 'lucide-react'
+import { Download, Smartphone, Terminal, Copy, Check } from 'lucide-react'
 
 export interface DownloadOption {
   id: string;
@@ -22,9 +22,37 @@ interface DownloadOptionsModalProps {
   description: string;
   options: DownloadOption[];
   cancelText?: string;
+  installCommand?: string;
 }
 
-export function DownloadOptionsModal({ isOpen, onClose, title, description, options, cancelText = "Cancel" }: DownloadOptionsModalProps) {
+export function DownloadOptionsModal({ 
+  isOpen, 
+  onClose, 
+  title, 
+  description, 
+  options, 
+  cancelText = "Cancel",
+  installCommand,
+}: DownloadOptionsModalProps) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    if (!installCommand) return;
+    try {
+      await navigator.clipboard.writeText(installCommand);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      const textArea = document.createElement('textarea');
+      textArea.value = installCommand;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
   return (
     <AnimatePresence>
       {isOpen && (
@@ -98,6 +126,33 @@ export function DownloadOptionsModal({ isOpen, onClose, title, description, opti
                 </a>
               ))}
             </div>
+
+            {installCommand && (
+              <div className="mb-6 p-3.5 bg-white/[0.04] border border-white/10 rounded-2xl flex items-center justify-between font-mono text-xs text-white/90">
+                <div className="flex items-center gap-2.5 overflow-x-auto mr-2 min-w-0">
+                  <Terminal className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                  <span className="truncate select-all">{installCommand}</span>
+                </div>
+                <button
+                  type="button"
+                  onClick={handleCopy}
+                  className="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white/80 hover:text-white transition-colors flex items-center gap-1.5 flex-shrink-0 text-xs font-sans font-medium"
+                  aria-label="Copy terminal install command"
+                >
+                  {copied ? (
+                    <>
+                      <Check className="w-3.5 h-3.5 text-emerald-400" />
+                      <span className="text-emerald-400">Copied</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-3.5 h-3.5 text-white/60" />
+                      <span>Copy</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            )}
 
             <button
               onClick={onClose}

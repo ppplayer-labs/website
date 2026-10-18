@@ -18,7 +18,7 @@ PPPlayer is a free, cross-platform, open-source media player designed for discov
 
 ## Current Release — PPPlayer 4.0.0 (October 15, 2026)
 
-PPPlayer 4.0.0 is the current production release (Application: 4.0.0+12, Windows MSIX: 4.0.0.0, Publisher: Devflier). Published assets include Android (Google Play, APK, AAB), macOS (DMG, ZIP; Apple Developer ID signed & notarized), Windows (Microsoft Store, MSIX direct), and Linux (AppImage, Debian package, portable tarball).
+PPPlayer 4.0.0 is the current production release (Application: 4.0.0+12, Windows MSIX: 4.0.0.0, Publisher: Devflier). Published assets include Android (Google Play, APK, AAB), macOS (DMG, ZIP; Apple Developer ID signed & notarized), Windows (Microsoft Store, MSIX direct), and Linux (Snap Store `sudo snap install ppplayer`, AppImage, Debian package, portable tarball).
 
 Supported Platform Requirements:
 - macOS: macOS 13.0 or newer, Apple Silicon & Intel (Universal).
@@ -33,7 +33,7 @@ Key 4.0.0 Features:
 - Comprehensive network playlist support: M3U, PLS, XSPF, and ASX parsing, automatic HLS stream classification, IPTV header/group grouping, relative URL resolution, and bounded HTTP reads.
 - Robust local-library handling with schema 14 migration, durable media relinking, metadata extraction, and video probing.
 - Corrected playback recovery, source switching, and macOS graceful Quit handshake with zero orphaned Chromium helpers.
-- First-class Linux packaging supporting standalone AppImage, Debian (.deb), and portable tarball.
+- First-class Linux packaging supporting Snap Store (`sudo snap install ppplayer`), standalone AppImage, Debian (.deb), and portable tarball.
 
 Known Limitations:
 - Android YouTube background playback when the screen is turned off is unsupported in this version (YouTube iframe policy compliance and platform power management). Local and direct media playback in the background remains fully supported.

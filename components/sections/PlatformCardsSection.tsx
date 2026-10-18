@@ -89,6 +89,7 @@ export default function PlatformCardsSection() {
       tertiaryHref: DOWNLOAD_LINKS.linuxDeb,
       tertiaryBadge: '.deb',
       tertiaryIsAvailable: true,
+      installCommand: DOWNLOAD_LINKS.linuxSnapCmd,
     },
   ];
 
@@ -217,6 +218,7 @@ export default function PlatformCardsSection() {
         title={tCTA('modalTitle', { platform: platforms.find(p => p.id === activeModalPlatform)?.name || '' })}
         description={tCTA('modalDesc', { platform: platforms.find(p => p.id === activeModalPlatform)?.name || '' })}
         cancelText={tCTA('cancel')}
+        installCommand={platforms.find(p => p.id === activeModalPlatform)?.installCommand}
         options={getPlatformOptions(activeModalPlatform, {
           primaryDownload: tCTA('primaryDownload'),
           directDownload: tCTA('directDownload'),

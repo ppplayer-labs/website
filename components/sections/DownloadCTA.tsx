@@ -9,7 +9,7 @@ import { SpotlightLogo } from '@/components/ui/SpotlightLogo'
 import { PLATFORMS, getPlatformOptions } from '@/lib/constants'
 import { DownloadOptionsModal } from '@/components/ui/DownloadOptionsModal'
 import { Link } from '@/i18n/routing'
-import { Monitor, Smartphone, Apple, Laptop } from 'lucide-react'
+import { Monitor, Smartphone, Apple, Laptop, Terminal, Copy, Check } from 'lucide-react'
 
 // Helper to get platform icon
 const getPlatformIcon = (id: string, className?: string) => {
@@ -34,10 +34,28 @@ export default function DownloadCTA() {
   
   const [activePlatformId, setActivePlatformId] = useState<string>('macos');
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [copiedCmd, setCopiedCmd] = useState(false);
 
   const handleDownloadClick = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
     e.preventDefault();
     setIsModalOpen(true);
+  };
+
+  const handleCopyCmd = async (cmd: string) => {
+    try {
+      await navigator.clipboard.writeText(cmd);
+      setCopiedCmd(true);
+      setTimeout(() => setCopiedCmd(false), 2000);
+    } catch {
+      const textArea = document.createElement('textarea');
+      textArea.value = cmd;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setCopiedCmd(true);
+      setTimeout(() => setCopiedCmd(false), 2000);
+    }
   };
 
   const activePlatform = PLATFORMS.find(p => p.id === activePlatformId) || PLATFORMS[0];
@@ -160,6 +178,35 @@ export default function DownloadCTA() {
                   >
                     {t('downloadFor', { platform: activePlatform.name })}
                   </SpotlightButton>
+
+                  {activePlatform.installCommand && (
+                    <div className="mt-6 flex flex-col items-center w-full max-w-sm">
+                      <div className="w-full bg-white/[0.04] border border-white/10 rounded-2xl p-3 flex items-center justify-between font-mono text-xs text-white/90">
+                        <div className="flex items-center gap-2.5 overflow-x-auto mr-2 min-w-0">
+                          <Terminal className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                          <span className="truncate select-all">{activePlatform.installCommand}</span>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => handleCopyCmd(activePlatform.installCommand!)}
+                          className="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white/80 hover:text-white transition-colors flex items-center gap-1.5 flex-shrink-0 text-xs font-sans font-medium"
+                          aria-label="Copy terminal install command"
+                        >
+                          {copiedCmd ? (
+                            <>
+                              <Check className="w-3.5 h-3.5 text-emerald-400" />
+                              <span className="text-emerald-400">Copied</span>
+                            </>
+                          ) : (
+                            <>
+                              <Copy className="w-3.5 h-3.5 text-white/60" />
+                              <span>Copy</span>
+                            </>
+                          )}
+                        </button>
+                      </div>
+                    </div>
+                  )}
                   
                 </motion.div>
               </AnimatePresence>
@@ -192,6 +239,7 @@ export default function DownloadCTA() {
         title={t('modalTitle', { platform: activePlatform.name })}
         description={t('modalDesc', { platform: activePlatform.name })}
         cancelText={t('cancel')}
+        installCommand={activePlatform.installCommand}
         options={getPlatformOptions(activePlatform.id, {
           primaryDownload: t('primaryDownload'),
           directDownload: t('directDownload'),

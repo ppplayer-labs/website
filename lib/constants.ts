@@ -20,6 +20,7 @@ export const DOWNLOAD_LINKS = {
   macos: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-macOS.dmg',
   androidApk: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Android.apk',
   linuxSnap: 'https://snapcraft.io/ppplayer',
+  linuxSnapCmd: 'sudo snap install ppplayer',
   linuxAppImage: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Linux-x86_64.AppImage',
   linuxDeb: 'https://github.com/ppplayer-labs/app/releases/latest/download/ppplayer_4.0.1-13_amd64.deb',
 }
@@ -44,6 +45,7 @@ export type PlatformConfig = {
   tertiaryHref?: string;
   tertiaryBadge?: string;
   tertiaryIsAvailable?: boolean;
+  installCommand?: string;
 };
 
 // Platform data
@@ -101,6 +103,7 @@ export const PLATFORMS: PlatformConfig[] = [
     tertiaryHref: DOWNLOAD_LINKS.linuxDeb,
     tertiaryBadge: '.deb',
     tertiaryIsAvailable: true,
+    installCommand: DOWNLOAD_LINKS.linuxSnapCmd,
   },
   {
     id: 'ios',

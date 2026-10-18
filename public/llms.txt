@@ -27,6 +27,7 @@ PPPlayer is a cross-platform media player app with published assets for macOS, W
 
 - **Android (Google Play)**: https://play.google.com/store/apps/details?id=com.ppplayer.app
 - **Windows (Microsoft Store)**: https://apps.microsoft.com/store/detail/9NKNDF67BG4X
+- **Linux (Snap Store)**: https://snapcraft.io/ppplayer (`sudo snap install ppplayer`)
 - **Android (APK)**, **macOS (DMG/ZIP)**, **Windows (MSIX)**, **Linux (AppImage/deb)**: Available via direct download on GitHub Releases
 - **iOS**: https://apps.apple.com/app/ppplayer (Configured, in development)
 
