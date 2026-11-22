@@ -24,7 +24,7 @@ PPPlayer 4.0.0 is the latest published GitHub app release, dated October 15, 202
 
 | Platform | Candidate target and qualification |
 | --- | --- |
-| macOS | 13+, Apple Silicon & Intel supported. Published 3.0.2 targeted 12+. |
+| macOS | 13+, Apple Silicon (arm64) supported. Published 3.0.2 targeted 12+. |
 | Android | ARM64 and x86_64; no 32-bit ARM. API 24 in the recorded candidate manifest; confirm final artifacts. |
 | iOS | 15+, iPhone/iPad. No verified public App Store availability. |
 | Windows | Windows 10+ x64 target; current final runtime/package acceptance pending. |

@@ -127,7 +127,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0或更高版本",
-        "arch": "苹果硅与英特尔（通用）",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM（推荐）"
       },
       "windows": {
@@ -320,7 +320,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "适用于 macOS 的直接下载版本。支持 Apple Silicon 和 Intel。",
+      "desc": "适用于 macOS（Apple Silicon / arm64）的直接下载。",
       "badge": "直接下载"
     },
     "linux": {

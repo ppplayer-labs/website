@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 o mas bago",
-        "arch": "Apple Silicon o Intel (Universal)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (Inirerekomenda)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Direktang pag-download para sa macOS. Sinusuportahan ang Apple Silicon & Intel.",
+      "desc": "Direktang pag-download para sa macOS (Apple Silicon / arm64).",
       "badge": "Direktang Download"
     },
     "linux": {

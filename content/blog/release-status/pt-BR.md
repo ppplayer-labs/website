@@ -24,7 +24,7 @@ A versão 4.0.0 é a publicação mais recente do aplicativo no GitHub, de 15 de
 
 | Plataforma | Configuração e limites |
 | --- | --- |
-| macOS | 13+, compatível com Apple Silicon e Intel. A versão 3.0.2 tinha alvo mínimo 12. |
+| macOS | 13+, compatível com Apple Silicon (arm64). A versão 3.0.2 tinha alvo mínimo 12. |
 | Android | ARM64 e x86_64, sem ARM de 32 bits. API 24 no manifesto registrado; confirmar nos arquivos finais. |
 | iOS | 15+, iPhone/iPad. Sem disponibilidade pública verificada na App Store. |
 | Windows | Alvo Windows 10+ x64; validação final de execução e instalação pendente. |

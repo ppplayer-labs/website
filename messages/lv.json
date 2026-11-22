@@ -127,7 +127,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 vai jaunāka",
-        "arch": "Apple Silicon & Intel (Universāls)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (Ieteicams)"
       },
       "windows": {
@@ -320,7 +320,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Tiešā lejupielāde operētājsistēmai macOS. Tiek atbalstīts Apple Silicon un Intel.",
+      "desc": "Tieša lejupielāde operētājsistēmai macOS (Apple Silicon / arm64).",
       "badge": "Tiešā lejupielāde"
     },
     "linux": {

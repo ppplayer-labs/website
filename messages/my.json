@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 သို့မဟုတ် နောက်ပိုင်း",
-        "arch": "အပ်ပယ် စီလီကွန်နှင့် အင်တယ် (ယူနီဗာဆယ်)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (အကြံပြုထားသည်)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "မက်ကို့အက်စ်",
       "label": "Mac",
-      "desc": "macOS အတွက် တိုက်ရိုက်ဒေါင်းလုဒ်။ Apple Silicon နှင့် Intel ကို ထောက်ပံ့သည်။",
+      "desc": "macOS (Apple Silicon / arm64) အတွက် တိုက်ရိုက်ဒေါင်းလုဒ်။",
       "badge": "တိုက်ရိုက် ဒေါင်းလုဒ်"
     },
     "linux": {

@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 або новіша",
-        "arch": "Apple Silicon та Intel (Universal)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 ГБ ОЗП (Рекомендовано)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Пряме завантаження для macOS. Підтримуються Apple Silicon та Intel.",
+      "desc": "Пряме завантаження для macOS (Apple Silicon / arm64).",
       "badge": "Пряме завантаження"
     },
     "linux": {

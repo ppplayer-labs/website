@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 ili noviji",
-        "arch": "Apple Silicon i Intel (Univerzalno)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (Preporučeno)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Izravno preuzimanje za macOS. Podržani Apple Silicon i Intel.",
+      "desc": "Izravno preuzimanje za macOS (Apple Silicon / arm64).",
       "badge": "Izravno preuzimanje"
     },
     "linux": {

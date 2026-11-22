@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 یا جدیدتر",
-        "arch": "Apple Silicon و Intel (یونیورسال)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "۴ گیگابایت رم (توصیه می‌شود)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "مک اواس",
       "label": "مک",
-      "desc": "دانلود مستقیم برای مک. Apple Silicon و Intel پشتیبانی می‌شوند.",
+      "desc": "دانلود مستقیم برای macOS (تراشه‌های Apple Silicon / arm64).",
       "badge": "دانلود مستقیم"
     },
     "linux": {

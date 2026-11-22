@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 térã pyahuvéva",
-        "arch": "Apple Silicon ha Intel (Universal)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (Ojejeruréva)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Emboguejy macOS-pe guarã. Apple Silicon ha Intel oñepytyvõ.",
+      "desc": "Ñemboguejy ha'eñóva macOS (Apple Silicon / arm64) peguarã.",
       "badge": "Emboguejy"
     },
     "linux": {

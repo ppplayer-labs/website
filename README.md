@@ -29,7 +29,7 @@ The current application release is PPPlayer 4.0.0 (`4.0.0+12`). `content/blog/re
 - `components/sections/PlaybackUpdatesSection.tsx`: upcoming playback features, shared by the homepage and changelog.
 - `messages/*.json` → `playbackUpdates`: playback feature copy in all 38 supported languages, with shared interface terminology in `common`. The section inherits the page’s text direction.
 - `content/blog/play-on-local-files-ios/{en,pt-BR}.md`: usage guide for local files, Play On, queue and iPhone system controls. Existing article routes fall back to English when a translation is missing.
-- `messages/*.json`: localized UI, released changelog entries and system requirements. iOS requires 15.0 or later; macOS 13+ (Apple Silicon & Intel Universal), Windows 10+ (64-bit), Android 7.0+ (ARM64/x86_64), Linux x86_64; 4 GB RAM recommended for Desktop, 2 GB RAM for Mobile.
+- `messages/*.json`: localized UI, released changelog entries and system requirements. iOS requires 15.0 or later; macOS 13+ (Apple Silicon / arm64), Windows 10+ (64-bit), Android 7.0+ (ARM64/x86_64), Linux x86_64; 4 GB RAM recommended for Desktop, 2 GB RAM for Mobile.
 - `scripts/localization/`: explicit playback/requirements translations and a repeatable catalog updater. Shared terms come from the app catalogs; there is no automatic English fallback.
 - `lib/constants.ts`: platform availability and download links.
 - `public/llms-full.txt`: machine-readable product information; keep it consistent with the visible site.

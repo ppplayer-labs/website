@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 hoặc mới hơn",
-        "arch": "Apple Silicon & Intel (Đa năng)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "RAM 4 GB (Được khuyến nghị)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Tải xuống trực tiếp cho macOS. Hỗ trợ Apple Silicon & Intel.",
+      "desc": "Tải xuống trực tiếp cho macOS (Apple Silicon / arm64).",
       "badge": "Tải xuống Trực tiếp"
     },
     "linux": {

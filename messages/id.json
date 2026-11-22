@@ -127,7 +127,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 atau lebih baru",
-        "arch": "Apple Silicon & Intel (Universal)​",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (Disarankan)"
       },
       "windows": {
@@ -320,7 +320,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Unduhan langsung untuk macOS. Mendukung Apple Silicon & Intel.",
+      "desc": "Unduhan langsung untuk macOS (Apple Silicon / arm64).",
       "badge": "Unduhan Langsung"
     },
     "linux": {

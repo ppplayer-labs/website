@@ -127,7 +127,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 o más reciente",
-        "arch": "Apple Silicon e Intel (Universal)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (Recomendado)"
       },
       "windows": {
@@ -320,7 +320,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Descarga directa para macOS. Compatible con Apple Silicon e Intel.",
+      "desc": "Descarga directa para macOS (Apple Silicon / arm64).",
       "badge": "Descarga Directa"
     },
     "linux": {
