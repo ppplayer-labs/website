@@ -127,7 +127,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 или новее",
-        "arch": "Apple Silicon и Intel (Универсальный)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 ГБ ОЗУ (Рекомендуется)"
       },
       "windows": {
@@ -320,7 +320,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Прямая загрузка для macOS. Поддержка Apple Silicon и Intel.",
+      "desc": "Прямая загрузка для macOS (Apple Silicon / arm64).",
       "badge": "Прямая загрузка"
     },
     "linux": {

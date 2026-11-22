@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 немесе жаңарақ",
-        "arch": "Apple Silicon және Intel (Универсал)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (ұсынылады)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "macOS үшін тікелей жүктеп алу. Apple Silicon және Intel қолдау көрсетеді.",
+      "desc": "macOS (Apple Silicon / arm64) үшін тікелей жүктеп алу.",
       "badge": "Тікелей жүктеп алу"
     },
     "linux": {

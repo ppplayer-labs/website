@@ -127,7 +127,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 või uuem",
-        "arch": "Apple Silicon ja Intel (universaalne)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (soovitatav)"
       },
       "windows": {
@@ -320,7 +320,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Otsene allalaadimine macOS-i jaoks. Toetatud on Apple Silicon ja Intel.",
+      "desc": "Otsene allalaadimine macOS-i jaoks (Apple Silicon / arm64).",
       "badge": "Otsene allalaadimine"
     },
     "linux": {

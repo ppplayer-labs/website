@@ -54,14 +54,14 @@ export const PLATFORMS: PlatformConfig[] = [
     id: 'macos',
     name: 'macOS',
     label: 'Mac',
-    description: 'Direct download for macOS. Apple Silicon & Intel supported.',
+    description: 'Direct download for macOS (Apple Silicon / arm64).',
     badge: 'Direct Download',
     href: DOWNLOAD_LINKS.macos,
     color: 'from-gray-400 to-gray-200',
     isAvailable: true,
     requirements: {
       os: 'macOS 13.0 or newer',
-      architecture: 'Apple Silicon & Intel (Universal)',
+      architecture: 'Apple Silicon (arm64)',
       memory: '4 GB RAM (Recommended)',
     }
   },

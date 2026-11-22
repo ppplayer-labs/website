@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 yoki undan yangiroq",
-        "arch": "Apple Silicon va Intel (Universal)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (Tavsiya etiladi)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "macOS uchun to'g'ridan-to'g'ri yuklab olish. Apple Silicon va Intel qo'llab-quvvatlanadi.",
+      "desc": "macOS (Apple Silicon / arm64) uchun toʻgʻridan-toʻgʻri yuklab olish.",
       "badge": "To'g'ridan-to'g'ri yuklab olish"
     },
     "linux": {

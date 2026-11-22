@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 বা পরবর্তী সংস্করণ",
-        "arch": "অ্যাপল সিলিকন ও ইন্টেল (ইউনিভার্সাল)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (প্রস্তাবিত)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "ম্যাকওএস",
       "label": "Mac",
-      "desc": "macOS এর জন্য সরাসরি ডাউনলোড। Apple Silicon এবং Intel সমর্থিত।",
+      "desc": "macOS (Apple Silicon / arm64)-এর জন্য সরাসরি ডাউনলোড।",
       "badge": "সরাসরি ডাউনলোড"
     },
     "linux": {

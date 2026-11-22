@@ -127,7 +127,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 vagy újabb",
-        "arch": "Apple Silicon és Intel (Univerzális)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (ajánlott)"
       },
       "windows": {
@@ -320,7 +320,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "Közvetlen letöltés macOS-re. Az Apple Silicon és az Intel támogatott.",
+      "desc": "Közvetlen letöltés macOS-re (Apple Silicon / arm64).",
       "badge": "Közvetlen letöltés"
     },
     "linux": {

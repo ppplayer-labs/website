@@ -127,7 +127,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 أو أحدث",
-        "arch": "Apple Silicon و Intel (شامل)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "ذاكرة وصول عشوائي 4 جيجابايت (موصى بها)"
       },
       "windows": {
@@ -320,7 +320,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "تنزيل مباشر لنظام macOS. يدعم Apple Silicon و Intel.",
+      "desc": "تنزيل مباشر لنظام macOS (معالجات Apple Silicon / arm64).",
       "badge": "تنزيل مباشر"
     },
     "linux": {

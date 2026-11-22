@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 หรือใหม่กว่า",
-        "arch": "Apple Silicon & Intel (Universal)​",
+        "arch": "Apple Silicon (arm64)",
         "mem": "RAM 4 GB (แนะนำ)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "ดาวน์โหลดโดยตรงสำหรับ macOS รองรับ Apple Silicon และ Intel",
+      "desc": "ดาวน์โหลดโดยตรงสำหรับ macOS (Apple Silicon / arm64)",
       "badge": "ดาวน์โหลดโดยตรง"
     },
     "linux": {

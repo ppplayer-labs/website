@@ -125,7 +125,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 ან უფრო ახალი",
-        "arch": "Apple Silicon და Intel (უნივერსალური)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB ოპერატიული მეხსიერება (რეკომენდებულია)"
       },
       "windows": {
@@ -318,7 +318,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "პირდაპირი ჩამოტვირთვა macOS-ისთვის. მხარდაჭერილია Apple Silicon და Intel.",
+      "desc": "პირდაპირი ჩამოტვირთვა macOS-ისთვის (Apple Silicon / arm64).",
       "badge": "პირდაპირი ჩამოტვირთვა"
     },
     "linux": {

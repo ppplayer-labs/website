@@ -21,7 +21,7 @@ PPPlayer is a free, cross-platform, open-source media player designed for discov
 PPPlayer 4.0.0 is the current production release (Application: 4.0.0+12, Windows MSIX: 4.0.0.0, Publisher: Devflier). Published assets include Android (Google Play, APK, AAB), macOS (DMG, ZIP; Apple Developer ID signed & notarized), Windows (Microsoft Store, MSIX direct), and Linux (Snap Store `sudo snap install ppplayer`, AppImage, Debian package, portable tarball).
 
 Supported Platform Requirements:
-- macOS: macOS 13.0 or newer, Apple Silicon & Intel (Universal).
+- macOS: macOS 13.0 or newer, Apple Silicon (arm64).
 - Windows: Windows 10 or later (64-bit x64).
 - Android: Android 7.0 (API 24) or newer (ARM64, x86_64).
 - Linux: Modern 64-bit distributions (Ubuntu 20.04+, Debian 11+, Fedora, Arch).

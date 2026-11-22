@@ -127,7 +127,7 @@
     "reqs": {
       "macos": {
         "os": "macOS 13.0 이상",
-        "arch": "Apple Silicon 및 Intel (유니버설)",
+        "arch": "Apple Silicon (arm64)",
         "mem": "4 GB RAM (권장)"
       },
       "windows": {
@@ -320,7 +320,7 @@
     "macos": {
       "name": "macOS​",
       "label": "Mac",
-      "desc": "macOS용 직접 다운로드. Apple Silicon 및 Intel 지원.",
+      "desc": "macOS(Apple Silicon / arm64) 직접 다운로드.",
       "badge": "직접 다운로드"
     },
     "linux": {
