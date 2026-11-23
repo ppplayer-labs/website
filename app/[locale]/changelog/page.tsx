@@ -2,6 +2,7 @@ import {Link} from '@/i18n/routing'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import PlaybackUpdatesSection from '@/components/sections/PlaybackUpdatesSection'
+import { LATEST_RELEASE_TAG, LATEST_RELEASE_URL, LATEST_RELEASE_VERSION } from '@/lib/constants'
 
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 import { routing } from '@/i18n/routing';
@@ -48,7 +49,75 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
 
           <div className="relative border-l border-white/10 ml-4 md:ml-8 space-y-24">
 
+            {/* Version 4.0.2 */}
+            <div className="relative pl-8 md:pl-16 mb-24">
+              <div className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-red-500 ring-4 ring-red-500/20" />
+              <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 mb-6">
+                <h2 className="text-2xl font-bold text-white tracking-tight">v{LATEST_RELEASE_VERSION}</h2>
+                <span className="text-slate-400 font-medium">November 23, 2026</span>
+                <a
+                  href={LATEST_RELEASE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-red-400 hover:text-red-300 underline transition-colors"
+                >
+                  GitHub Release {LATEST_RELEASE_TAG}
+                </a>
+              </div>
 
+              <p className="text-slate-300 text-lg mb-10 leading-relaxed max-w-2xl">
+                Desktop playback stability, smoother Home scrolling and Retina artwork caching, Android Activity-detach and SAF folder-import fixes, Linux packaging hardening, and a temporarily ads-free release.
+              </p>
+
+              <div className="space-y-10">
+                <div>
+                  <h3 className="text-white text-xs font-semibold uppercase tracking-widest mb-5">{t('v2_0_1.added')}</h3>
+                  <ul className="space-y-6">
+                    <li className="flex gap-4">
+                      <span className="text-emerald-400 mt-0.5">✦</span>
+                      <div>
+                        <strong className="block text-white mb-1">Smoother Home Scrolling &amp; Retina Artwork Caching</strong>
+                        <span className="text-slate-400 text-sm leading-relaxed block max-w-lg">Eliminated repeated section shimmers and card entry animations, preserved Home vertical and horizontal scroll positions across navigation, added shared decode-width bucketing and a bounded 80 MB / 300-entry desktop image cache, and improved offline stale-while-revalidate cached content resilience.</span>
+                      </div>
+                    </li>
+                    <li className="flex gap-4">
+                      <span className="text-emerald-400 mt-0.5">✦</span>
+                      <div>
+                        <strong className="block text-white mb-1">Chromium 0.5.7 &amp; Desktop Efficiency</strong>
+                        <span className="text-slate-400 text-sm leading-relaxed block max-w-lg">Upgraded to flutter_chromium_webview 0.5.7 with lazy desktop restore, inactive rendering throttling, persistent YouTube sessions, and clean ordered shutdown without orphaned helper processes.</span>
+                      </div>
+                    </li>
+                    <li className="flex gap-4">
+                      <span className="text-emerald-400 mt-0.5">✦</span>
+                      <div>
+                        <strong className="block text-white mb-1">Linux Packaging &amp; Metadata</strong>
+                        <span className="text-slate-400 text-sm leading-relaxed block max-w-lg">Bundled desktop/AppStream/icon metadata in portable x86_64 tarballs, added an AppArmor userns profile to Debian packages, and hardened release checksums.</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-white text-xs font-semibold uppercase tracking-widest mb-5">{t('v2_0_0.fixed')}</h3>
+                  <ul className="space-y-6">
+                    <li className="flex gap-4">
+                      <span className="text-amber-400 mt-0.5">●</span>
+                      <div>
+                        <strong className="block text-white mb-1">Desktop Mini-Video Surface Recovery &amp; Settings Persistence</strong>
+                        <span className="text-slate-400 text-sm leading-relaxed block max-w-lg">Fixed intermittent black mini-video frames after rapid Hide/Show toggling by eliminating Chromium resize storms, and serialized Hive settings updates to prevent toggle races.</span>
+                      </div>
+                    </li>
+                    <li className="flex gap-4">
+                      <span className="text-amber-400 mt-0.5">●</span>
+                      <div>
+                        <strong className="block text-white mb-1">Android Lifecycle, SAF Folder Import &amp; Ads-Free Build</strong>
+                        <span className="text-slate-400 text-sm leading-relaxed block max-w-lg">Fixed Activity-detach disposal crashes, restored Android SAF folder import for music and videos, improved R8 release packaging, and temporarily shipped v4.0.2 completely ads-free.</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
             {/* Version 2.0.1 */}
             <div className="relative pl-8 md:pl-16 mb-24">

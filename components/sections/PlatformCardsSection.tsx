@@ -41,9 +41,6 @@ export default function PlatformCardsSection() {
       color: 'rgba(6, 182, 212, 0.1)',
       gradient: 'from-cyan-500/10 to-transparent',
       isAvailable: true,
-      secondaryHref: DOWNLOAD_LINKS.windowsMsix,
-      secondaryBadge: 'MSIX',
-      secondaryIsAvailable: true,
     },
     {
       id: 'ios',

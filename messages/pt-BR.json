@@ -611,7 +611,7 @@
     "output": "Escolha AirPlay no iPhone ou Mac. Cast e DLNA aceitam mídia compatível.",
     "queue": "Fila em painel redimensionável no desktop e folha no celular.",
     "pause": "A pausa pela tela bloqueada ou Central de Controle do iPhone é respeitada.",
-    "note": "O PPPlayer 4.0.0 foi lançado oficialmente. A reprodução do YouTube em segundo plano no Android não é suportada nesta versão.",
+    "note": "O PPPlayer 4.0.2 foi lançado oficialmente (temporariamente sem anúncios). A reprodução do YouTube em segundo plano no Android continua não suportada nesta versão.",
     "localTitle": "Música Local",
     "outputTitle": "Reproduzir em",
     "queueTitle": "FILA",

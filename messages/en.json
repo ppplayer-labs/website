@@ -611,7 +611,7 @@
     "output": "Choose AirPlay on iPhone or Mac. Cast and DLNA support compatible media.",
     "queue": "Resizable desktop queue panel and mobile queue sheet.",
     "pause": "Pause from the iPhone lock screen or Control Center stays paused.",
-    "note": "PPPlayer 4.0.0 is officially released. Background YouTube playback on Android is unsupported in this version.",
+    "note": "PPPlayer 4.0.2 is officially released (temporarily ads-free). Background YouTube playback on Android remains unsupported in this version.",
     "localTitle": "Local Music",
     "outputTitle": "Play On",
     "queueTitle": "QUEUE",

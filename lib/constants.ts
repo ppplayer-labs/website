@@ -11,18 +11,21 @@ export const PROJECT_LINKS = {
   license: 'https://github.com/ppplayer-labs/ppplayer/blob/main/LICENSE',
 }
 
+export const LATEST_RELEASE_VERSION = '4.0.2'
+export const LATEST_RELEASE_TAG = 'v4.0.2'
+export const LATEST_RELEASE_URL = 'https://github.com/ppplayer-labs/app/releases/tag/v4.0.2'
+
 // Download links: update when store listings are live
 export const DOWNLOAD_LINKS = {
   ios: 'https://apps.apple.com/app/ppplayer',
   android: 'https://play.google.com/store/apps/details?id=com.ppplayer.app&pcampaignid=web_share',
   windows: 'https://apps.microsoft.com/store/detail/9NKNDF67BG4X?cid=DevShareMCLPCS',
-  windowsMsix: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Windows.msix',
-  macos: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-macOS.dmg',
-  androidApk: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Android.apk',
+  macos: 'https://github.com/ppplayer-labs/app/releases/download/v4.0.2/PPPlayer-macOS.dmg',
+  androidApk: 'https://github.com/ppplayer-labs/app/releases/download/v4.0.2/PPPlayer-Android.apk',
   linuxSnap: 'https://snapcraft.io/ppplayer',
   linuxSnapCmd: 'sudo snap install ppplayer',
-  linuxAppImage: 'https://github.com/ppplayer-labs/app/releases/latest/download/PPPlayer-Linux-x86_64.AppImage',
-  linuxDeb: 'https://github.com/ppplayer-labs/app/releases/latest/download/ppplayer_4.0.1-13_amd64.deb',
+  linuxAppImage: 'https://github.com/ppplayer-labs/app/releases/download/v4.0.2/PPPlayer-Linux-x86_64.AppImage',
+  linuxDeb: 'https://github.com/ppplayer-labs/app/releases/download/v4.0.2/ppplayer_4.0.2-14_amd64.deb',
 }
 
 export type PlatformConfig = {
@@ -79,9 +82,6 @@ export const PLATFORMS: PlatformConfig[] = [
       architecture: 'x64',
       memory: '4 GB RAM (Recommended)',
     },
-    secondaryHref: DOWNLOAD_LINKS.windowsMsix,
-    secondaryBadge: 'MSIX (Direct)',
-    secondaryIsAvailable: true,
   },
   {
     id: 'linux',

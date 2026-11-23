@@ -1,41 +1,35 @@
 ---
-title: "PPPlayer Release Status: Published 3.0.2 and the 4.0.0 Candidate"
-excerpt: "What is published, what the next candidate implements, and which platform checks remain open."
-date: "2026-10-15"
+title: "PPPlayer 4.0.2 Release Status"
+excerpt: "PPPlayer 4.0.2 is now available on GitHub Releases with desktop mini-video recovery, smoother Home scrolling, Android SAF/lifecycle fixes, and an ads-free build."
+date: "2026-11-23"
 author: "PPPlayer Team"
 category: "Updates"
 readTime: "3"
 isDraft: false
 ---
 
-PPPlayer 4.0.0 is the latest published GitHub app release, dated October 15, 2026. [Published releases and assets](https://github.com/ppplayer-labs/app/releases) are the authoritative GitHub download history.
+PPPlayer 4.0.2 is the latest published GitHub app release, dated November 23, 2026. [GitHub Release v4.0.2](https://github.com/ppplayer-labs/app/releases/tag/v4.0.2) is the authoritative public download source.
 
-**PPPlayer 4.0.0 is officially published.** Build metadata: Application `4.0.0+12`, Windows MSIX `4.0.0.0`, Publisher: `Devflier`. All platform builds (macOS, Windows, Android, Linux) have been validated and published.
+**PPPlayer 4.0.2 is officially published on GitHub Releases.** Build metadata: Application `4.0.2+14`, Windows MSIX `4.0.2.0` (Microsoft Store submission package), Publisher: `Devflier`. This release ships **temporarily ads-free** (Google Mobile Ads SDK, UMP consent, and Advertising ID permission removed).
 
-## Implemented in the candidate
+## What's new in 4.0.2
 
-- Chromium YouTube playback routes on Android, macOS, Windows and Linux. iOS retains WebKit; local files and direct streams use MediaKit.
-- A redesigned queue with desktop panel and mobile sheet, separate fullscreen navigation, draggable desktop width and saved width preference.
-- Expanded M3U, PLS, XSPF and ASX playlist parsing, HLS detection, IPTV groups and HTTP headers, relative URLs, deduplication and download/time limits.
-- Local-library query, file access, metadata/video probing, playback recovery/source switching, macOS video resizing and import entitlement corrections.
-- Linux packaging scripts, broader regression coverage and release validation tooling. Packaging scripts do not establish released Linux support.
+- **Desktop mini-video surface recovery & settings persistence:** Fixed intermittent black mini-video rendering after rapid Hide/Show toggling by eliminating Chromium/CEF resize storms (`160×90` constant surface, off-screen parking on desktop, pointer and accessibility exclusion when hidden), and serialized Hive settings updates.
+- **Smoother Home scrolling & Retina artwork caching:** Eliminated repeated section shimmers and card entry animations, preserved Home vertical and horizontal scroll positions across navigation, introduced shared artwork decode-width bucketing and a bounded lazy `80 MB / 300 entries` desktop image cache, improved offline stale-while-revalidate cached-content resilience, and hardened Spotify artwork URL parsing and missing-artwork fallbacks.
+- **Chromium `0.5.7` & desktop lifecycle:** Upgraded to hosted `flutter_chromium_webview ^0.5.7`, added lazy desktop startup restoration, inactive rendering throttling (`setRenderingActive`), persistent Chromium sessions, and clean ordered desktop shutdown (`AppShutdownCoordinator`).
+- **Android fixes:** Fixed Activity-detach disposal crashes during active Chromium playback, restored Storage Access Framework (SAF) folder import for music and videos, aligned `minSdk` to API 24, and hardened R8 and Picture-in-Picture behavior.
+- **Linux packaging:** Bundled desktop, AppStream, and icon metadata inside portable `x86_64` tarballs, shipped a narrowly scoped `.deb` AppArmor `userns` profile, and hardened release checksums.
 
-## Candidate compatibility
+## Platform compatibility & distribution
 
-| Platform | Candidate target and qualification |
+| Platform | Target & availability |
 | --- | --- |
-| macOS | 13+, Apple Silicon (arm64) supported. Published 3.0.2 targeted 12+. |
-| Android | ARM64 and x86_64; no 32-bit ARM. API 24 in the recorded candidate manifest; confirm final artifacts. |
-| iOS | 15+, iPhone/iPad. No verified public App Store availability. |
-| Windows | Windows 10+ x64 target; current final runtime/package acceptance pending. |
-| Linux | Experimental x86_64 packaging; target-host install/playback pending. No Linux asset in published 3.0.2. |
-
-The requirements panel describes the system requirements (4 GB RAM recommended for Desktop platforms, 2 GB RAM recommended for Mobile). Existing downloads have their own release-specific compatibility.
+| macOS | macOS 13.0+, **Apple Silicon (`arm64`) only** (signed, notarized, and stapled DMG/ZIP on GitHub Releases). Intel/universal builds are not qualified. |
+| Windows | Windows 10+ `x64`, distributed via the **Microsoft Store** (unsigned Partner Center MSIX is not offered as a direct GitHub download). |
+| Linux | `x86_64` AppImage, `.deb`, and portable `.tar.gz` available on GitHub Releases. Snap Store and Flathub updates are tracked independently (Flathub submission pending review). |
+| Android | Android 7.0 (API 24)+, `ARM64` and `x86_64` (signed ads-free APK available on GitHub Releases; Google Play update handled separately). |
+| iOS | iOS 15.0+, iPhone/iPad (currently in development; no public App Store release yet). |
 
 ## Known limitations
 
-Android YouTube playback stalls after Home/screen-off in emulator acceptance. This ships as a known, unfixed limitation (root cause undetermined; YouTube policy also disallows hidden iframe playback). Do not rely on YouTube background playback on Android. Physical ARM64, PiP, audio interruptions, notification controls and long-pause checks remain pending.
-
-Production signing, Apple notarization, Windows MSIX packaging, and Linux AppImage/Debian builds have completed and passed automated release gates.
-
-PPPlayer 4.0.0 is available for immediate download from the [PPPlayer GitHub Releases](https://github.com/ppplayer-labs/app/releases) and respective application stores.
+Background YouTube playback on Android remains unsupported in this version. Download PPPlayer 4.0.2 from [GitHub Release v4.0.2](https://github.com/ppplayer-labs/app/releases/tag/v4.0.2) or the Microsoft Store for Windows.
