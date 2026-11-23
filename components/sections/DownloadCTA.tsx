@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { SpotlightButton } from '@/components/ui/SpotlightButton'
 import { SpotlightText } from '@/components/ui/SpotlightText'
 import { SpotlightLogo } from '@/components/ui/SpotlightLogo'
-import { PLATFORMS, getPlatformOptions } from '@/lib/constants'
+import { LATEST_RELEASE_VERSION, PLATFORMS, getPlatformOptions } from '@/lib/constants'
 import { DownloadOptionsModal } from '@/components/ui/DownloadOptionsModal'
 import { Link } from '@/i18n/routing'
 import { Monitor, Smartphone, Apple, Laptop, Terminal, Copy, Check } from 'lucide-react'
@@ -122,7 +122,7 @@ export default function DownloadCTA() {
                 >
                   
                   <div className="mb-8">
-                    <p className="mb-4 text-sm text-slate-300">PPPlayer 4.0.0 · <Link href="/blog/release-status" className="underline hover:text-white transition-colors">{t('reqTitle', { platform: activePlatform.name })}</Link></p>
+                    <p className="mb-4 text-sm text-slate-300">PPPlayer {LATEST_RELEASE_VERSION} · <Link href="/blog/release-status" className="underline hover:text-white transition-colors">{t('reqTitle', { platform: activePlatform.name })}</Link></p>
                     <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-2">
                       {t('reqTitle', { platform: activePlatform.name })}
                     </h3>

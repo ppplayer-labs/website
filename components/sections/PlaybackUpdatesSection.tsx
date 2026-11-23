@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { SpotlightText } from '@/components/ui/SpotlightText';
 import { SpotlightCard } from '@/components/ui/SpotlightCard';
+import { LATEST_RELEASE_VERSION } from '@/lib/constants';
 
 const icons = [Music2, Airplay, ListMusic, Smartphone];
 
@@ -65,7 +66,7 @@ export default function PlaybackUpdatesSection({ locale, compact = false }: { lo
           className="mt-12 pt-8 border-t border-white/5"
         >
           <p className="max-w-3xl text-sm leading-relaxed text-slate-500">{content.note}</p>
-          <p className="mt-3 text-sm text-slate-400">PPPlayer 4.0.0 · <Link href="/blog/release-status" className="underline hover:text-white transition-colors">{content.changelog}</Link></p>
+          <p className="mt-3 text-sm text-slate-400">PPPlayer {LATEST_RELEASE_VERSION} · <Link href="/blog/release-status" className="underline hover:text-white transition-colors">{content.changelog}</Link></p>
           <div className="flex flex-wrap gap-x-6 gap-y-3 mt-4 text-sm font-semibold">
             <Link href="/blog/play-on-local-files-ios" className="text-white hover:text-red-400 transition-colors inline-flex items-center gap-1 group">
               {content.guide}
